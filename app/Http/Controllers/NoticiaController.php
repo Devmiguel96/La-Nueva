@@ -143,13 +143,20 @@ class NoticiaController extends Controller {
 		->join('usuarios','usuarios.id','=','noticias.usuarios_id')
 		->select('usuarios.id')
 		->get();
-		foreach ($noticias as $noticia) {
-			$id = $noticia->id;
-		}
 
-		if ($iduser == $id) {
-			$noticia = Noticia::findOrFail($idnoticia);
-			return view('noticia.editar',compact('noticia'));
+		$cant = count($noticias);
+		
+		if ($cant >= 1) {
+			foreach ($noticias as $noticia) {
+				$id = $noticia->id;
+			}
+
+			if ($iduser == $id) {
+				$noticia = Noticia::findOrFail($idnoticia);
+				return view('noticia.editar',compact('noticia'));
+			}
+			
+			return Redirect(url('/noticias/editar',$iduser));
 		}
 		
 		return Redirect(url('/noticias/editar',$iduser));
@@ -202,8 +209,10 @@ class NoticiaController extends Controller {
 		->get();
 		foreach ($nombres as $nombre) {
 			$var = $nombre->foto;
-		}*/
-	
+		}
+		
+		\File::delete($var);
+		*/
 		Noticia::destroy($id);
 
 		$mensaje = 'Noticia Eliminada';
