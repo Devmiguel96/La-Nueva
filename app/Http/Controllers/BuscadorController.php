@@ -1,0 +1,100 @@
+<?php namespace couser\Http\Controllers;
+
+use couser\Http\Requests;
+use couser\Http\Controllers\Controller;
+use couser\Noticia;
+use Illuminate\Http\Request;
+
+class BuscadorController extends Controller {
+
+
+	public function __construct()
+	{
+		$this->middleware('auth');
+	}
+
+	/**
+	 * Display a listing of the resource.
+	 *
+	 * @return Response
+	 */
+	
+
+	/**
+	 * Show the form for creating a new resource.
+	 *
+	 * @return Response
+	 */
+	public function getBuscarcategoria($id)
+	{
+		$noticias = \DB::table('noticias')
+		->where('noticias.categorias_id',$id)
+		->join('usuarios','usuarios.id','=','noticias.usuarios_id')
+		->join('categorias','categorias.id','=','noticias.categorias_id')
+		->select('noticias.*','categorias.nombre as tipo','usuarios.nombre as name','usuarios.apellido as last_name')
+		->orderBy('created_at','DESC')
+		->get();
+
+		$cant = count($noticias);
+
+		return view('noticia.index',compact('noticias'));
+	}
+
+	/**
+	 * Store a newly created resource in storage.
+	 *
+	 * @return Response
+	 */
+	public function store()
+	{
+		//
+	}
+
+	/**
+	 * Display the specified resource.
+	 *
+	 * @param  int  $id
+	 * @return Response
+	 */
+	public function getMostrar($id)
+	{
+		
+		return 'MIguelnasa'.$id;
+	}
+
+	/**
+	 * Show the form for editing the specified resource.
+	 *
+	 * @param  int  $id
+	 * @return Response
+	 */
+	public function edit($id)
+	{
+		//
+	}
+
+	/**
+	 * Update the specified resource in storage.
+	 *
+	 * @param  int  $id
+	 * @return Response
+	 */
+	public function update($id)
+	{
+		//
+	}
+
+	/**
+	 * Remove the specified resource from storage.
+	 *
+	 * @param  int  $id
+	 * @return Response
+	 */
+	public function deleteEliminar($id)
+	{
+		Noticia::destroy($id);
+	
+		return Redirect('home');
+	}
+
+}
