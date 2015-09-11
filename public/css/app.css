@@ -22,6 +22,28 @@ section,
 summary {
   display: block;
 }
+.time{
+  color:#666;
+}
+.titulo{
+  color: #393939;
+  font-family: "roboto_slabregular";
+  font-size: 29px;
+  text-transform: capitalize;
+}
+.fecha{
+  margin-top: -15px;
+  color:#666;
+  font-size: 11px;
+}
+.des{
+  margin-top: -10px;
+  margin-bottom: 1px;
+  font-size: 18px;
+  color: #393939;
+  font-family: "roboto_slabregular";
+  line-height: 1.2;
+}
 audio,
 canvas,
 progress,

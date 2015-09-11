@@ -1,4 +1,4 @@
-@extends('head')
+@extends('nav2')
 
 @section('content')
 <div class="container">
@@ -9,11 +9,12 @@
 				<div class="panel-body">
 					<table class="table table-bordered">
 						<thead>
-							<th class="info">#{{ $cant = 1 }}</th>
+							<th class="info">#</th>
 							<th class="info">Nombre</th>
 							<th class="info">Apellido</th>
 							<th class="info">Publicaciones</th>
 						</thead>
+						<?php $cant = 1 ?>
 						@foreach($usuarios as $usuario)
 						<tbody>
 								<td>{{ $cant++ }}</td>

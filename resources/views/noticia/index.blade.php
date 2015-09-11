@@ -1,20 +1,9 @@
-@extends('head')
-<?php $message=Session::get('message') ?>
-@if($message == 'guardar')
-	<div class="alert alert-success alert-dismissible" role="alert">
-		<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>Noticia Publicada.
-	</div>
-@endif
-<?php $mensage=Session::get('mensage') ?>
-@if($mensage == 'actualizar')
-	<div class="alert alert-success alert-dismissible" role="alert">
-		<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>Noticia Actualizada.
-	</div>
-@endif
+@extends('nav2')
+
 @section('content')
 <div class="container">
 	<div class="row">
-		<div class="col-md-10 col-md-offset-1">
+		<div class="col-md-12 ">
 			<div class="panel panel-default">
 				<div class="panel-heading">Noticias </div>
 				@if(isset($cant))
@@ -22,7 +11,7 @@
 						<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 							<p class="bg-info"><strong>Resultados: {{ $cant}}</strong></p>
 						</div>
-					@endif
+				@endif
 				<div class="panel-body">
 					<center>
 						@foreach($noticias as $noticia)
@@ -30,12 +19,20 @@
 								<div class="panel panel-default" >
 									<a href="{{ url('/noticias/mostrar',$noticia->id) }}"class="list-group-item " >
 										<div class="panel-heading">Noticia {!! $noticia->tipo !!}</div>
-									    	<img  src="{{asset('storage/')}}/{{$noticia->foto}}" width="240" height="300" class="thumbnail" >
+									    	<img  src="{{asset('storage/')}}/{{$noticia->foto}}" width="300" height="300" class="thumbnail" >
 										    <div class="">
-										       	<h3>{{ $titulos = str_limit($noticia->titulo, 30) }}</h3>
+										       	<h3>{{ $titulos = str_limit($noticia->titulo, 25) }}</h3>
 										        <p>{{ $detalles = str_limit($noticia->detalle, 50) }}</p>
 										    </div>
-										<div class="panel panel-footer">Publicado por: <h6><strong>{!! $noticia->name !!} {!! $noticia->last_name !!}</strong></h6><small>{{ $noticia->created_at }}</small>
+										<div class="panel panel-footer">Publicado por: <h6><strong>{!! $noticia->name !!} {!! $noticia->last_name !!}</strong></h6><small>
+										<?php 
+				  						 	$fecha = $noticia->created_at;
+				  						 	$dt = new DateTime($fecha);
+
+											$hora = $dt->format('h:i:s.A');
+
+											echo $dt->format('d-m-Y').' '.$hora;
+				  						 ?></small>
 										</div>
 									</a>
 								</div>

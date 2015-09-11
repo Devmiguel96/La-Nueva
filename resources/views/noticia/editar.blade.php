@@ -1,4 +1,4 @@
-@extends('head')
+@extends('nav2')
 
 @section('content')
 <div class="container-fluid">

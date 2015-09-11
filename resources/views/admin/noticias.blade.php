@@ -1,4 +1,4 @@
-@extends('head')
+@extends('nav2')
 
 @section('content')
 <div class="container">
@@ -43,8 +43,6 @@
 	
 	{!! Form::close() !!}
 </div>
-@endsection
-
 @endsection
 
 @section('script')

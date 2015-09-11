@@ -1,4 +1,4 @@
-@extends('head')
+@extends('nav2')
 
 @section('content')
 <div class="container">
@@ -21,8 +21,8 @@
 	                     	@include('usuario.partials.form')
 							<div class="form-group">
 								<div class="col-md-6 col-md-offset-4">
-								    <a href="{{ url('home') }}" class="btn btn-danger">Cancelar</a>
-									{!! Form::submit('Guardar',['class' => 'btn btn-primary']) !!}
+								    <a href="{{ url('/noticias') }}" class="btn btn-danger">CANCELAR</a>
+									{!! Form::submit('GUARDAR',['class' => 'btn btn-primary']) !!}
 								</div>
 							</div>
 						{!! Form::close() !!}	

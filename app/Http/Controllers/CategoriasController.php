@@ -34,7 +34,10 @@ class CategoriasController extends Controller {
 
 		$cant = count($noticias);
 
-		return view('noticia.index',compact('noticias','cant'));
+		$programas = \DB::table('programas')
+		->get();
+
+		return view('index',compact('noticias','programas'));
 	}
 
 	/**

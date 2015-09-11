@@ -14,7 +14,7 @@ class UsuarioController extends Controller {
 
 	public function __construct()
 	{
-		$this->middleware('auth');
+		$this->middleware('auth',['except' => ['store','create']]);
 	}
 
 	/**
@@ -24,7 +24,7 @@ class UsuarioController extends Controller {
 	 */
 	public function index()
 	{
-		return view('/auth/login');
+		return view('login');
 	}
 
 	/**
@@ -48,7 +48,7 @@ class UsuarioController extends Controller {
 		$usuario->roles_id = '2';
 		$usuario->save();
 
-		return Redirect('/')->with('message','guardar');
+		return Redirect('/');
 	}
 
 	/**
@@ -107,7 +107,7 @@ class UsuarioController extends Controller {
 			$usuario->fill($request->all());
 			$usuario->save();
 
-			return Redirect('home')->with('message','guardar');
+			return Redirect('/noticias');
 		}
 		return Redirect()->back();
 		

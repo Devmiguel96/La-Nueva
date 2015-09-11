@@ -4,15 +4,16 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Noticias</title>
+	<title>La Nueva 101.6 MHZ</title>
 
 	<link href="{{ asset('/css/app.css') }}" rel="stylesheet">
 	<link href="{{ asset('/css/sweetalert.css') }}" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="icon" type="image/png" href="{{asset('/img/logo.png')}}" />
 	
-
 	<!-- Fonts -->
 	<link href='//fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+	<script src="{{ asset('/js/ckeditor/ckeditor.js')}}"></script>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="{{ asset('/css/sweetalert.min.js') }}"></script>
@@ -27,15 +28,14 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="{{ url('/noticias/index') }}">Noticias</a>
+				<a class="navbar-brand" href="{{ url('/noticias') }}">La Nueva 101.6 MHZ</a>
 			</div>
 
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
 				<ul class="nav navbar-nav navbar-right">
 					@if (Auth::guest())
-
-					    <li><a href="{{ url('/usuarios') }}">Login</a></li>
+						<li><a href="{{ url('/usuarios') }}">Login</a></li>
 						<li><a href="{{ route('usuarios.create') }}">Registrarse</a></li>
 					@elseif(Auth::user()->IsAdmin())
 					<li>{!! Form::open([
@@ -61,16 +61,17 @@
 									    </div>
 								    </div>
 						    {!! Form::close() !!}</li>
-							<li><a href="{{ url('/noticias/index') }}">Ver Noticias</a></li>
-							<li><a href="{{ url('/noticias/crear') }}">Publicar Noticias</a></li>
+							<li><a href="{{ url('/noticias') }}">Inicio</a></li>
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{ Auth::user()->nombre }} {{ Auth::user()->apellido }} <span class="caret"></span></a>
-							<ul class="dropdown-menu" role="menu">
+							<ul class="dropdown-menu"  role="menu">
+								<li><a  href="{{ url('/noticias/crear') }}">Publicar Noticias</a></li>
 								<li><a href="{{ route('usuarios.edit',Auth::user()->id) }}">Editar Perfil</a></li>
 								<li><a href="{{ url('/noticias/editar',Auth::user()->id) }}">Editar mis
 								Noticias</a></li>
 								<li><a href="{{ route('usuarios.show',Auth::user()->id) }}">Ver Mis Noticias</a></li>
 								<li><a href="{{ url('/admin/noticias') }}">Administrar Noticias</a></li>
+								<li><a href="{{ route('programas.index') }}">Administrar Programas</a></li>
 								<li><a href="{{ url('/admin/usuarios') }}">Administrar Usuarios</a></li>
 								<li><a href="{{ url('/admin/top10') }}">Top 10</a></li>
 								<li><a href="{{ url('/auth/logout') }}">Cerrar Session</a></li>
@@ -99,11 +100,12 @@
 						    	<button type="submit" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-search"></span> Buscar </button>
 							{!! Form::close() !!}</li>
 
-					<li><a href="{{ url('/noticias/index') }}">Ver Noticias</a></li>
-						<li><a href="{{ url('/noticias/crear') }}">Publicar Noticias</a></li>
+						<li><a href="{{ url('/noticias') }}">Inicio</a></li>
+						
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{ Auth::user()->nombre }} {{ Auth::user()->apellido }} <span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">
+								<li><a  href="{{ url('/noticias/crear') }}">Publicar Noticias</a></li>
 								<li><a href="{{ route('usuarios.edit',Auth::user()->id) }}">Editar Perfil</a></li>
 								<li><a href="{{ url('/noticias/editar',Auth::user()->id) }}">Editar mis
 								Noticias</a></li>

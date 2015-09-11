@@ -1,4 +1,4 @@
-@extends('head')
+@extends('nav2')
 
 @section('content')
 <div class="container-fluid">
@@ -24,20 +24,27 @@
 						</div>
 						<div class="form-group">
 							{!! Form::label('detalle', 'Detalle') !!}
-							{!! Form::textarea('detalle', null, ['class' => 'form-control','rows'=>'3']) !!}
+							{!! Form::textarea('detalle', null, ['class' => 'form-control','rows'=>'3','id'=>'ckeditor']) !!}
+							<script>
+                                CKEDITOR.replace( 'ckeditor' );
+                            </script>
 						</div>
 						<div class="form-group">
-							{!! Form::label('categorias_id', 'Tipo de Noticia') !!}
-							{!! Form::select('categorias_id', ['1' => 'Deportiva', '2' => 'Judicial', '3' => 'Tecnologica'],null,['class' => 'form-control']) !!}
+							{!! Form::label('categorias_id', 'Categoria') !!}
+							<select name="categorias_id" class="form-control" id="categorias_id">
+								@foreach ($categorias as $categoria)
+									<option value="{{$categoria->id}}">{{$categoria->nombre }}</option>
+								@endforeach
+							</select>
 						</div>
 						<div class="form-group">
-						    {!! Form::label('foto', 'Foto') !!}
+						    {!! Form::label('foto', 'Subir Imagen') !!}
 						    {!! Form::file('foto') !!}
 						    <p class="help-block">Seleccione una foto</p>
 						</div>
 						<div class="form-group">
 							<div class="col-md-6 col-md-offset-4">
-								{!! Form::submit('Publicar Noticia',['class' => 'btn btn-primary']); !!}
+								{!! Form::submit('AGREGAR NOTICIAS',['class' => 'btn btn-warning']); !!}
 							</div>
 						</div>
 					{!! Form::close() !!}

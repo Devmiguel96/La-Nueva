@@ -1,10 +1,5 @@
 @extends('head')
-<?php $message=Session::get('message') ?>
-@if($message == 'guardar')
-	<div class="alert alert-success alert-dismissible" role="alert">
-		<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>Usuario creado con Exito.
-	</div>
-@endif
+
 @section('content')
 <div class="container-fluid">
 	<div class="row">
@@ -27,7 +22,7 @@
 						<input type="hidden" name="_token" value="{{ csrf_token() }}">
 
 						<div class="form-group">
-							<label class="col-md-4 control-label">E-Mail</label>
+							<label class="col-md-4 control-label">E-Mailas</label>
 							<div class="col-md-6">
 								<input type="email" class="form-control" name="email" value="{{ old('email') }}">
 							</div>

@@ -1,17 +1,11 @@
-@extends('head')
-<?php $message=Session::get('message') ?>
-@if($message == 'guardar')
-	<div class="alert alert-success alert-dismissible" role="alert">
-		<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>Usuario creado con Exito.
-	</div>
-@endif
+@extends('nav2')
 
 @section('content')
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
 			<div class="panel panel-default">
-				<div class="panel-heading">Login</div>
+				<div class="panel-heading">Login de Usuario</div>
 				<div class="panel-body">
 					@if (count($errors) > 0)
 						<div class="alert alert-danger">
@@ -53,8 +47,8 @@
 
 						<div class="form-group">
 							<div class="col-md-6 col-md-offset-4">
-								<button type="submit" class="btn btn-primary" style="margin-right: 15px">
-									Login
+								<button type="submit" class="btn btn-warning" style="margin-right: 15px">
+									L O G I N
 								</button>
 							</div>
 						</div>

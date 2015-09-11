@@ -1,5 +1,6 @@
 <?php namespace couser;
 
+use Carbon\Carbon;
 use Illuminate\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Auth\Passwords\CanResetPassword;
@@ -37,6 +38,5 @@ class Noticia extends Model implements AuthenticatableContract, CanResetPassword
 		}
 		
 	}
-
 
 }

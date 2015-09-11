@@ -27,6 +27,6 @@ class Comentario extends Model implements AuthenticatableContract, CanResetPassw
 	 * @var array
 	 */
 	
-
+	
 
 }

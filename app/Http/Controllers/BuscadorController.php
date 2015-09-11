@@ -34,10 +34,13 @@ class BuscadorController extends Controller {
 		->select('noticias.*','categorias.nombre as tipo','usuarios.nombre as name','usuarios.apellido as last_name')
 		->orderBy('created_at','DESC')
 		->get();
+		
+		$programas = \DB::table('programas')
+		->get();
 
 		$cant = count($noticias);
 
-		return view('noticia.index',compact('noticias'));
+		return view('index',compact('noticias','programas'));
 	}
 
 	/**

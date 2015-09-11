@@ -11,9 +11,10 @@
 |
 */
 
-Route::get('/', 'WelcomeController@index');
 
-Route::get('home',function(){
+Route::get('login', 'WelcomeController@index');
+
+Route::get('/',function(){
 	
 	return Redirect(url('/noticias'));
 });
@@ -29,3 +30,4 @@ Route::controllers([
 
 Route::resource('usuarios','UsuarioController');
 Route::resource('comentarios','ComentarioController');
+Route::resource('programas','ProgramasController');

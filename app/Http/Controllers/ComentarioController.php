@@ -2,6 +2,7 @@
 
 use couser\Http\Requests;
 use couser\Http\Controllers\Controller;
+use couser\Http\Requests\ComentarioRequest;
 use couser\Comentario;
 use Auth;
 use Illuminate\Http\Request;
@@ -25,7 +26,7 @@ class ComentarioController extends Controller {
 	 */
 	public function create()
 	{
-
+		
 	}
 
 	/**
@@ -44,7 +45,7 @@ class ComentarioController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function show(Request $request,$idNoticia)
+	public function show(ComentarioRequest $request,$idNoticia)
 	{
 		$comentario = new Comentario($request->all());
 		$comentario->usuarios_id = Auth::User()->id;

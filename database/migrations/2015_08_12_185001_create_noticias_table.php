@@ -16,7 +16,7 @@ class CreateNoticiasTable extends Migration {
 		{
 			$table->increments('id');
 			$table->string('titulo');
-			$table->string('detalle',500);
+			$table->string('detalle',1000);
 			$table->string('foto');
 			$table->integer('categorias_id')->unsigned();
 			$table->integer('usuarios_id')->unsigned();

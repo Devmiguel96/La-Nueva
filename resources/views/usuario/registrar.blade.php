@@ -1,4 +1,4 @@
-@extends('head')
+@extends('nav2')
 
 @section('content')
 <div class="container-fluid">
@@ -21,7 +21,7 @@
 	                     	@include('usuario.partials.form')
 							<div class="form-group">
 								<div class="col-md-6 col-md-offset-4">
-									{!! Form::submit('Registrar',['class' => 'btn btn-primary']) !!}
+									{!! Form::submit('REGISTRAR',['class' => 'btn btn-warning']) !!}
 								</div>
 							</div>
 						{!! Form::close() !!}	

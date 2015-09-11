@@ -13,7 +13,7 @@ class NoticiaController extends Controller {
 
 	public function __construct()
 	{
-		$this->middleware('auth');
+		$this->middleware('auth',['except' => ['getIndex','getMostrar']]);
 	}
 
 	/**
@@ -28,9 +28,13 @@ class NoticiaController extends Controller {
 		->join('usuarios','usuarios.id','=','noticias.usuarios_id')
 		->orderBy('created_at','DESC')
 		->select('noticias.*','categorias.nombre as tipo','usuarios.nombre as name','usuarios.apellido as last_name')
+		->limit(6)
+		->get();
+
+		$programas = \DB::table('programas')
 		->get();
 	
-		return view('noticia.index',compact('noticias'));
+		return view('index',compact('noticias','programas'));
 	}
 
 	public function getBuscarnoticias(Request $request)
@@ -49,7 +53,11 @@ class NoticiaController extends Controller {
 	 */
 	public function getCrear()
 	{
-		return view('noticia.create');
+		$categorias = \DB::table('categorias')
+		->select('nombre','id')
+		->get();
+
+		return view('noticia.create',compact('categorias'));
 	}
 
 	/**
@@ -73,7 +81,7 @@ class NoticiaController extends Controller {
         	//guardamos la imagen en public/img con el nombre original
         	$file->move(public_path('storage'),$file->getClientOriginalName());
 			//redirigimos con un mensaje flash
-			return Redirect('/noticias')->with('message','guardar');
+			return Redirect('/noticias');
         } 
         
 	}
@@ -91,7 +99,7 @@ class NoticiaController extends Controller {
 		->join('comentarios','noticias.id','=','comentarios.noticias_id')
 		->join('usuarios','usuarios.id','=','comentarios.usuarios_id')
 		->select('descripcion','nombre','apellido','comentarios.created_at as fecha')
-		->orderBy('comentarios.created_at','ASC')
+		->orderBy('comentarios.created_at','DESC')
 		->get();
 
 		$tipos = \DB::table('noticias') //obtenemos la categoria de la noticia y los nombre de quien publico la noticia
@@ -190,7 +198,7 @@ class NoticiaController extends Controller {
         	//guardamos la imagen en public/img con el nombre original
         	$file->move(public_path('storage'),$file->getClientOriginalName());
 			//redirigimos con un mensaje flash
-			return Redirect('/noticias')->with('mensage','actualizar');
+			return Redirect('/noticias');
         }
         
 	}

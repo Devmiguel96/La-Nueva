@@ -17,6 +17,15 @@ class CategoriaTableSeeder extends Seeder
 		\DB::table('categorias')->insert(array(
 				'nombre'=>'Tecnologica'
 		));
+		\DB::table('categorias')->insert(array(
+				'nombre'=>'Economica'
+		));
+		\DB::table('categorias')->insert(array(
+				'nombre'=>'Politica'
+		));
+		\DB::table('categorias')->insert(array(
+				'nombre'=>'Otros'
+		));
 	}
 }
 
