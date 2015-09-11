@@ -18,7 +18,7 @@
 							<div class="col-sm-6 col-md-4">
 								<div class="panel panel-default" >
 									<a href="{{ url('/noticias/mostrar',$noticia->id) }}"class="list-group-item " >
-										<div class="panel-heading">Noticia {!! $noticia->tipo !!}</div>
+										<div class="panel-heading">Categoria {!! $noticia->tipo !!}</div>
 									    	<img  src="{{asset('storage/')}}/{{$noticia->foto}}" width="300" height="300" class="thumbnail" >
 										    <div class="">
 										       	<h3>{{ $titulos = str_limit($noticia->titulo, 25) }}</h3>
