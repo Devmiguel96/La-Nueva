@@ -24,14 +24,14 @@
 						<div class="form-group">
 							{!! Form::label('email','Correo Electronico',['class'=>'col-md-4 control-label']) !!}
 							<div class="col-md-6">
-								{!! Form::text('email',null,['class'=>'form-control']) !!}
+							<input type="email" name="email" id="email" class="form-control" required>
 							</div>
 						</div>
 
 						<div class="form-group">
 							{!! Form::label('password','Contraseña',['class'=>'col-md-4 control-label']) !!}
 							<div class="col-md-6">
-								{!! Form::password('password',['class'=>'form-control']) !!}
+								<input type="password" name="password" id="password" class="form-control" required>
 							</div>
 						</div>
 

@@ -161,7 +161,8 @@ class NoticiaController extends Controller {
 
 			if ($iduser == $id) {
 				$noticia = Noticia::findOrFail($idnoticia);
-				return view('noticia.editar',compact('noticia'));
+				$categorias = \DB::table('categorias')->select('nombre','id')->get();
+				return view('noticia.editar',compact('noticia','categorias'));
 			}
 			
 			return Redirect(url('/noticias/editar',$iduser));
