@@ -9,15 +9,48 @@ body {
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+/*esta linea es para el slider de http://unslider.com/*/
+.banner { 
+    position: relative; 
+    overflow: hidden; 
+    width: 100%;
+    text-align: center;
+    height: 600px;
+}
+.banner li { list-style: none; }
+.banner ul li { float: left; }
+.banner ul{ margin:0px;padding:0px; }
+
+header>div>ul>li>span {
+    position: absolute;
+}
+header>div>ul>li>img {
+    height: 653px;
+    width: 100%;
+}
+.centrado{
+    margin-left: 2%; 
+}
+
+
+/*-slider-*/
+.menu1{
+    background:rgba(2, 2, 2, 0.75);
+}
+.menu1>li>a:hover{
+    background-color: rgba(2, 2, 2, 0.75);
+}
 .text-muted {
     color: #777;
 }
 .row .slider2, .row .slider3 {
     display: none;
 }
+
 @media (max-width: 768px){
     .imgnoticias{height:auto}
     .mapa{width:100%;height:300px;}
+    .btn-xl{padding: 11px 8px}
 }
 @media (max-width: 1000px){
     .logo{display:none;}
@@ -264,7 +297,7 @@ fieldset[disabled] .btn-xl.active {
     .navbar-default {
         padding: 25px 0;
         border: 0;
-        background-color: transparent;
+        background-color: rgba(2, 2, 2, 0.41);
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
@@ -291,11 +324,14 @@ fieldset[disabled] .btn-xl.active {
     }
 }
 
+
+
+
 header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url(../img/header1.jpg);
+    background-color: #222222;
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
@@ -321,8 +357,8 @@ header .intro-text .intro-heading {
     margin-bottom: 25px;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 50px;
-    font-weight: 700;
+    font-size: 30px;
+    font-weight: 500;
     line-height: 50px;
 
 }

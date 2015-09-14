@@ -1,4 +1,4 @@
-@extends('nav2')
+@extends('layout.nav2')
 
 @section('content')
 <div class="container">
@@ -33,11 +33,16 @@
 				</div>
 			</div>
 		</div>
+		<style>
+		#footer{
+			margin-top: 186px;
+		}
+	</style>
 	</div>
 	{!! Form::open(['route' => ['programas.destroy','program_id'], 'method' => 'DELETE','id'=>'form-eliminar']) !!}
 	
 	{!! Form::close() !!}
-</div>
+	</div>
 @endsection
 
 @section('script')

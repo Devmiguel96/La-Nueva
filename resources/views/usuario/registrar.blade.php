@@ -1,4 +1,4 @@
-@extends('nav2')
+@extends('layout.nav2')
 
 @section('content')
 <div class="container-fluid">
@@ -7,8 +7,8 @@
 			<div class="panel panel-default">
 				<div class="panel-heading">Registrar Usuarios</div>
 				<div class="panel-body">
-					@if (count($errors) > 0)
-						<div class="alert alert-danger">
+				@if (count($errors) > 0)
+						<div id="error" class="alert alert-danger">
 						Corriga los siguientes errores..<br><br>
 							<ul>
 								@foreach ($errors->all() as $error)
@@ -17,6 +17,7 @@
 							</ul>
 						</div>
 					@endif
+					
 						{!! Form::open(['route' => 'usuarios.store', 'method' => 'POST']) !!}
 	                     	@include('usuario.partials.form')
 							<div class="form-group">
@@ -27,7 +28,14 @@
 						{!! Form::close() !!}	
 				</div>
 			</div>
+			
 		</div>
 	</div>
+	<style>
+		#footer{
+			margin-top: 10px;
+		}
+	</style>
 </div>
 @endsection
+

@@ -40,7 +40,7 @@ class Authenticate {
 			}
 			else
 			{
-				return redirect()->to('auth/login');
+				return redirect()->to('login');
 			}
 		}
 

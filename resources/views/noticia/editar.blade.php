@@ -1,4 +1,4 @@
-@extends('nav2')
+@extends('layout.nav2')
 
 @section('content')
 <div class="container-fluid">

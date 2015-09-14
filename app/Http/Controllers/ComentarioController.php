@@ -36,7 +36,10 @@ class ComentarioController extends Controller {
 	 */
 	public function store()
 	{
+		
+		
 
+		//return Redirect('/noticias/mostrar/'.$idNoticia);
 	}
 
 	/**
@@ -47,12 +50,19 @@ class ComentarioController extends Controller {
 	 */
 	public function show(ComentarioRequest $request,$idNoticia)
 	{
-		$comentario = new Comentario($request->all());
-		$comentario->usuarios_id = Auth::User()->id;
-		$comentario->noticias_id = $idNoticia;
-		$comentario->save();
+		$mensaje = 'Comentario Creado';
 
-		return Redirect('/noticias/mostrar/'.$idNoticia);
+		if ($request->ajax())
+		{
+			$comentario = new Comentario($request->all());
+			$comentario->usuarios_id = Auth::User()->id;
+			$comentario->noticias_id = $idNoticia;
+			$comentario->save();
+
+			return $mensaje;
+			
+			
+		}
 	}
 
 	/**

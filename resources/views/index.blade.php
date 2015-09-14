@@ -1,4 +1,4 @@
-@extends('nav')
+@extends('layout.nav')
 
 @section('content')
 
@@ -9,7 +9,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Noticias</h2>
-                    {!! Form::open(['url'=>'/noticias/buscarnoticias','method'=>'GET','class'=>'navbar-form','role'=>'search']) !!}
+                    <!--{!! Form::open(['url'=>'/noticias/buscarnoticias','method'=>'GET','class'=>'navbar-form','role'=>'search']) !!}
                         <div class="form-group">
                             <div class="input-group">
                                 <span class="input-group-btn">
@@ -26,7 +26,7 @@
                                     </span>
                             </div>
                         </div>
-                            {!! Form::close() !!}
+                            {!! Form::close() !!}-->
                     
                     <h3 class="section-subheading text-muted">Emisora La Nueva 101.6 MHZ, de Sabanalarga.</h3>
                 </div>
@@ -94,7 +94,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Acerca..</h2>
+                    <h2 class="section-heading">Acerca de.</h2>
                     <h3 class="section-subheading text-muted">Emisora La Nueva 101.6 MHZ, de Sabanalarga.</h3>
                 </div>
             </div>
@@ -107,7 +107,7 @@
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>2009-2011</h4>
+                                    <h4>Año en que inicio</h4>
                                     <h4 class="subheading">Inicios</h4>
                                 </div>
                                 <div class="timeline-body">
@@ -121,7 +121,6 @@
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>March 2011</h4>
                                     <h4 class="subheading">Misión</h4>
                                 </div>
                                 <div class="timeline-body">
@@ -135,7 +134,6 @@
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>December 2012</h4>
                                     <h4 class="subheading">Visión</h4>
                                 </div>
                                 <div class="timeline-body">
@@ -182,7 +180,7 @@
                     <h3 class="section-subheading text-muted">Emisora La Nueva 101.6 MHZ, de Sabanalarga.</h3>
                 </div>
             </div>
-            <div class="row" id="equipo">
+            <div class="row"  id="equipo">
                 <div class="slider1">
                     <div class="col-sm-4">
                         <div class="team-member">
@@ -305,7 +303,6 @@
                             </ul>
                         </div>
                     </div>
-                </div>
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
@@ -313,35 +310,11 @@
                 </div>
             </div>
         </div>
+                
+    </div>
     </section>
 
-    <!-- Clients Aside -->
-    <aside class="clients">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/envato.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/designmodo.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/themeforest.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/creative-market.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </aside>
+   
     
     <!-- Contact Section -->
     <section id="contact">
@@ -363,7 +336,7 @@
 
                         <p id="texto"><strong>Direccion:</strong>  Cra 19 #21 – 45 2do piso, Barrio centro Sabanalarga (Atlantico)</p>
                         <p id="texto"><strong>Telefonos:</strong> 8783134-8780418  Movil:3016026767</p>
-                        <p id="texto"><strong>E-mail:</strong> sistemgill@hotmail.com</p>
+                        <p id="texto"><strong>E-mail:</strong>...</p>
                     </div>
                 </div>
             </div>
@@ -386,16 +359,72 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-4">
-                    <ul class="list-inline quicklinks">
-                        <li><a href="#">Privacy Policy</a>
-                        </li>
-                        <li><a href="#">Terms of Use</a>
-                        </li>
-                    </ul>
-                </div>
             </div>
         </div>
     </footer>
     <script id="cid0020000102392352913" data-cfasync="false" async src="//st.chatango.com/js/gz/emb.js" style="width: 275px;height: 402px;">{"handle":"la-nueva","arch":"js","styles":{"a":"383838","b":95,"c":"FFFFFF","d":"FFFFFF","f":95,"i":95,"k":"383838","l":"383838","m":"383838","n":"FFFFFF","o":95,"p":"10","q":"383838","r":95,"pos":"br","cv":1,"cvbg":"202020","cvbga":64,"cvw":266,"cvh":37,"ticker":1,"fwtickm":1}}</script>
+
+    <div class="modal fade" id="portfolioModal1"  aria-hidden="true"role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="padding:35px 50px;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4><span class="glyphicon glyphicon-lock"></span> Login</h4>
+        </div>
+        <div class="modal-body" style="padding:40px 50px;">
+        @if (count($errors) > 0)
+                        <div class="alert alert-danger">
+                        Corriga los Siguientes Errores<br><br>
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+
+                    <form class="form-horizontal" role="form" method="POST" action="/couser/public/auth/login">
+                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
+
+                        <div class="form-group">
+                            {!! Form::label('email','Correo Electronico',['class'=>'col-md-4 control-label']) !!}
+                            <div class="col-md-6">
+                                {!! Form::text('email',null,['class'=>'form-control']) !!}
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            {!! Form::label('password','Contraseña',['class'=>'col-md-4 control-label']) !!}
+                            <div class="col-md-6">
+                                {!! Form::password('password',['class'=>'form-control']) !!}
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-6 col-md-offset-4">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" name="remember">Recordarme
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                            <div class="col-md-6 col-md-offset-4">
+                                <input type="submit" class="btn btn-warning" value="L O G I N">
+                                                                   
+                        </div>
+                    </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+          <p>No tienes Cuenta? <a href="#">Registrate</a></p>
+        </div>
+      </div>
+      
+    </div>
+  </div> 
 @endsection

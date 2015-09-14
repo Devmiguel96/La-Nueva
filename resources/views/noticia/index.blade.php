@@ -1,4 +1,4 @@
-@extends('nav2')
+@extends('layout.nav2')
 
 @section('content')
 <div class="container">
@@ -22,7 +22,7 @@
 									    	<img  src="{{asset('storage/')}}/{{$noticia->foto}}" width="300" height="300" class="thumbnail" >
 										    <div class="">
 										       	<h3>{{ $titulos = str_limit($noticia->titulo, 25) }}</h3>
-										        <p>{{ $detalles = str_limit($noticia->detalle, 50) }}</p>
+										        <p>{{ $detalles = str_limit($noticia->detalle, 44) }}</p>
 										    </div>
 										<div class="panel panel-footer">Publicado por: <h6><strong>{!! $noticia->name !!} {!! $noticia->last_name !!}</strong></h6><small>
 										<?php 

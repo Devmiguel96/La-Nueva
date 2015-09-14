@@ -1,4 +1,4 @@
-@extends('nav2')
+@extends('layout.nav2')
 
 @section('content')
 <div class="container">
@@ -8,6 +8,16 @@
 				<div class="panel-heading">Noticia @foreach( $tipos as $tipo){!! $tipo->categoria !!}							</div>									
 					<div class="panel-body">
 					<a href="{{ url('/noticias') }}" class="btn btn-warning" role="button">Atras</a>
+					<p class="text-right"><strong>Publicado por:</strong> {!! $tipo->name !!} {!! $tipo->last_name !!} </p>
+  						<p class="time text-right"><span class="glyphicon glyphicon-time"></span>
+  						 <?php 
+  						 	$fecha = $tipo->created_at;
+  						 	$dt = new DateTime($fecha);
+
+							$h = $dt->format('h:i:s.A');
+
+							echo $dt->format('d-m-Y').' '.$h;
+  						 ?></p>
 					
 						<h1 class="text-center titulo" >{!! $noticias->titulo !!}</h1>
 						<div class="col-md-8 col-md-offset-2">
@@ -15,9 +25,8 @@
 							<p class="text-left">{!! $noticias->detalle !!}</p><br>
 							<ul class="list-group">
 							    <li class="list-group-item active"><img  src="{{ asset('img/comen.png') }}" alt="Comentario" title="Comentarios"> <strong>{{ $cant }} Comentarios</strong></li>
-							    <?php $cant = 1 ?>
 							    @foreach($comentarios as $comentario)
-							    <li class="list-group-item" ><p class="text-left"><strong>{{ $cant++}}. <span class="glyphicon glyphicon-user"></span> {!! $comentario->nombre !!} {!! $comentario->apellido !!}</strong></p>
+							    <li class="list-group-item" ><p class="text-left"><strong>{{ $cant--}}. <span class="glyphicon glyphicon-user"></span> {!! $comentario->nombre !!} {!! $comentario->apellido !!}</strong></p>
 									<p class="text-left fecha" > <?php 
 			  						 	$fecha = $comentario->fecha;
 			  						 	$dt = new DateTime($fecha);
@@ -38,13 +47,14 @@
 						</div>
 						
 						@if(Auth::user())
-							{!! Form::open(['route' => ['comentarios.show',$noticias->id], 'method' => 'GET','class'=>'row']) !!}
+							{!! Form::open(['route' => ['comentarios.show',$noticias->id], 'method' => 'GET','class'=>'row','id'=>'form-comentar']) !!}
+								<input type="hidden" name="_token" value="{{ csrf_token() }}">
 									<div class="form-group">
 										<div class="col-md-8 col-md-offset-2">
 											<div class="input-group">
-											{!! Form::text('descripcion',null,['class'=>'form-control','placeholder'=>'Escribe tu Comentario...']) !!}
+											{!! Form::text('descripcion',null,['class'=>'form-control','placeholder'=>'Escribe tu Comentario...','id'=>'comentario','required']) !!}
 													<span class="input-group-btn">
-													{!! Form::submit('Comentar',['class'=>'btn btn-warning']) !!}
+													{!! Form::submit('Comentar',['class'=>'btn btn-warning comentar']) !!}
 													 </span>
 											</div>
 										</div>
@@ -62,22 +72,38 @@
 							</ul>
 						</div>
 					@endif
-				<div class="panel-footer">
-  						<p><strong>Publicado por:</strong> {!! $tipo->name !!} {!! $tipo->last_name !!} </p>
-  						<p class="time"><span class="glyphicon glyphicon-time"></span>
-  						 <?php 
-  						 	$fecha = $tipo->created_at;
-  						 	$dt = new DateTime($fecha);
-
-							$h = $dt->format('h:i:s.A');
-
-							echo $dt->format('d-m-Y').' '.$h;
-  						 ?></p>
-					
-				</div>
 			</div>
 			@endforeach
 		</div>
 	</div>
 </div>
+@endsection
+@section('script')
+<script>
+	$(document).ready(function(){
+    	$('.comentar').click(function(e){
+
+    		if($("#comentario").val() == ""){
+		        alert("El campo comentario esta vacío.");
+		        $("#comentario").focus();
+
+		        return false;
+   			}else{
+   				e.preventDefault();
+
+	    		var form = $('#form-comentar');
+	    		var url = form.attr('action');
+	    		var data = form.serialize();
+					  
+				$.get(url, data, function(result){
+					location.reload();
+				});
+   			}
+
+    		
+
+
+    	});
+	});
+</script>
 @endsection

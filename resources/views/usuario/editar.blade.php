@@ -1,4 +1,4 @@
-@extends('nav2')
+@extends('layout.nav2')
 
 @section('content')
 <div class="container">
@@ -31,5 +31,10 @@
 			</div>
 		</div>
 	</div>
+	<style>
+		#footer{
+			margin-top: 50px;
+		}
+	</style>
 </div>
 @endsection

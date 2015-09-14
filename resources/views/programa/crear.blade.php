@@ -1,4 +1,4 @@
-@extends('nav2')
+@extends('layout.nav2')
 
 @section('content')
 <div class="container-fluid">
@@ -30,7 +30,10 @@
 		</div>
 	</div>
 </div>
+</div>
+</div>
 @endsection
+
 @section('script')
 <script>
 	$(document).ready(function(){
