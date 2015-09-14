@@ -8,8 +8,7 @@
 				<div class="panel-heading">Login de Usuario</div>
 				<div class="panel-body">
 					
-
-					<form class="form-horizontal" role="form" method="POST" action="/couser/public/auth/login">
+					{!! Form::open(['url' => ('auth/login'), 'method' => 'POST','class'=>'form-horizontal','role'=>'form']) !!}
 						<input type="hidden" name="_token" value="{{ csrf_token() }}">
 
 						<div class="form-group">
@@ -43,7 +42,7 @@
 								</button>
 							</div>
 						</div>
-					</form>
+					{!! Form::close() !!}
 				</div>
 			</div>
 			@if (count($errors) > 0)
