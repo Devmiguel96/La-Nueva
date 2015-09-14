@@ -36,3 +36,24 @@
 </div>
 
 @endsection
+@section('script')
+<script>
+	$(document).ready(function(){
+		$('#dias').hide();
+		$("#ver").click(function(){
+			if( $('#dias').is(":visible") ){
+			    $('#dias').hide();
+			    document.getElementById("primero").disabled=false;
+			    document.getElementById("primero1").disabled=false;
+			    document.getElementById("primero2").disabled=false;
+			}else{
+			    $("#dias").show(500);
+			    document.getElementById("primero").disabled=true;
+			    document.getElementById("primero1").disabled=true;
+			    document.getElementById("primero2").disabled=true;
+			}
+        	
+    	});
+    });
+</script>
+@endsection
