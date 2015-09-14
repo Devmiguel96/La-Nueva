@@ -7,6 +7,16 @@
 			<div class="panel panel-default">
 				<div class="panel-heading">Login de Usuario</div>
 				<div class="panel-body">
+				@if (count($errors) > 0)
+					<div id="error" class="alert alert-danger">
+						Corriga los Siguientes Errores<br><br>
+						<ul>
+							@foreach ($errors->all() as $error)
+								<li>{{ $error }}</li>
+								@endforeach
+						</ul>
+					</div>
+				@endif
 					
 					{!! Form::open(['url' => ('auth/login'), 'method' => 'POST','class'=>'form-horizontal','role'=>'form']) !!}
 						<input type="hidden" name="_token" value="{{ csrf_token() }}">
@@ -45,16 +55,6 @@
 					{!! Form::close() !!}
 				</div>
 			</div>
-			@if (count($errors) > 0)
-				<div id="error" class="alert alert-danger">
-					Corriga los Siguientes Errores<br><br>
-					<ul>
-						@foreach ($errors->all() as $error)
-							<li>{{ $error }}</li>
-							@endforeach
-					</ul>
-				</div>
-			@endif
 		</div>
 	</div>
 	<style>
@@ -63,14 +63,4 @@
 		}
 	</style>
 </div>
-@endsection
-@section('script')
-<script>
-	$(document).ready(function(){
-		if ($('#error').is(":visible")) 
-		{
-			$('#error').fadeOut(5000);
-		};
-	});
-</script>
 @endsection
