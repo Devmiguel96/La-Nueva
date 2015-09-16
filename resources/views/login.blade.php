@@ -46,7 +46,7 @@
 						</div>
 
 						<div class="form-group">
-							<div class="col-md-6 col-md-offset-4">
+							<div class="text-center">
 								<button type="submit" class="btn btn-warning" style="margin-right: 15px">
 									L O G I N
 								</button>
