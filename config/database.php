@@ -60,10 +60,10 @@ return [
 
 		'mysql' => [
 			'driver'    => 'mysql',
-			'host'      => env('DB_HOST', 'localhost'),
-			'database'  => env('DB_DATABASE', 'couser'),
+			'host'      => env('DB_HOST', '66.7.204.235'),
+			'database'  => env('DB_DATABASE', 'lanuevas_couser'),
 			'username'  => env('DB_USERNAME', 'root'),
-			'password'  => env('DB_PASSWORD', 'miguel'),
+			'password'  => env('DB_PASSWORD', 'lanuevastereo2015'),
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
