@@ -51,7 +51,7 @@
                     @if (Auth::guest())
                         <li><a href="{{ route('usuarios.index')}}" ><span class="glyphicon glyphicon-lock" ></span> Login</a></li>
                         <li><a href="{{ route('usuarios.create') }}"><span class="glyphicon glyphicon-user" ></span> Registrarse</a></li>
-                        @elseif(Auth::user()->isAdmin())
+                        @elseif(Auth::user()->roles_id == 1)
                             <li class="dropdown">
                                 <a href="#"  class="drop  dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{ Auth::user()->nombre }}<span class="caret"></span></a>
                                 <ul class="menu1 dropdown-menu" role="menu">
