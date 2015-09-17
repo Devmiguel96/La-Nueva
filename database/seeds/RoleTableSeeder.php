@@ -2,17 +2,12 @@
 
 use Illuminate\Database\Seeder;
  
-use Faker\Factory as Faker;
 
 class RoleTableSeeder extends Seeder
 {
 	
 	public function run()
-	{
-		$faker = Faker::create();
-
-	    foreach (range(1 ,1 )as $index) {
-	     
+	{	     
 	        \DB::table('roles')->insert(array(
 				'nombre' =>'admin'
 		    ));
@@ -26,8 +21,7 @@ class RoleTableSeeder extends Seeder
 				'password'=>\Hash::make('administrador'),
 				'roles_id'=>'1'
 		    ));
-	    }
-
+	    
 		
 	}
 }
