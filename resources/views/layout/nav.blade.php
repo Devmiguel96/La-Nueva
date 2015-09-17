@@ -115,6 +115,7 @@
                                     <li><a href="{{ url('/admin/usuarios') }}">Administrar Usuarios</a></li>
                                     <li><a href="{{ route('programas.index') }}">Administrar Programas</a></li>
                                     <li><a href="{{ url('/admin/top10') }}">Top 10</a></li>
+                                    <li><a href="{{ url('/admin/crearadmin') }}">Agregar Admin</a></li>
                                     <li><a href="{{ url('/auth/logout') }}">Cerrar Session</a></li>
                                 </ul>
                             </li>
@@ -122,11 +123,7 @@
                             <li class="dropdown">
                                 <a href="#" class="drop dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{ Auth::user()->nombre }}<span class="caret"></span></a>
                                 <ul class="dropdown-menu menu1"  role="menu">
-                                    <li><a href="{{ url('/noticias/crear') }}">Agregar Noticias</a></li>
                                     <li><a href="{{ route('usuarios.edit',Auth::user()->id) }}">Editar Perfil</a></li>
-                                    <li><a href="{{ url('/noticias/editar',Auth::user()->id) }}">Editar mis
-                                    Noticias</a></li>
-                                    <li><a href="{{ route('usuarios.show',Auth::user()->id) }}">Ver Mis Noticias</a></li>
                                     <li><a href="{{ url('/auth/logout') }}">Cerrar Session</a></li>
                                 </ul>
                             </li>

@@ -10,7 +10,7 @@
     </script>
 </div>
 <div class="form-group">
-	{!! Form::label('categorias_id', 'Tipo de Noticia') !!}
+	{!! Form::label('categorias_id', 'Categoria') !!}
 	<select name="categorias_id" id="categorias_id" class="form-control">
 		@foreach($categorias as $categoria)
 			<option value="{{ $categoria->id }}">{{ $categoria->nombre }}</option>

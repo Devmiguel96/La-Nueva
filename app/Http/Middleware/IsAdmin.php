@@ -23,7 +23,7 @@ class IsAdmin {
 	 */
 	public function handle($request, Closure $next)
 	{
-		if( ! $this->auth->user()->IsAdmin())
+		if( ! $this->auth->user()->isAdmin())
 		{
 			//$this->auth->logout();
 
@@ -33,7 +33,7 @@ class IsAdmin {
 			}
 			else
 			{
-				return redirect()->to('home');
+				return redirect()->to('/noticias');
 			}
 		}
 
