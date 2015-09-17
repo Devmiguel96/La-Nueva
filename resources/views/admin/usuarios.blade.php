@@ -22,12 +22,14 @@
 							<th>Apellido</th>
 							<th>Email</th>
 							<th>Eliminar</th>
+							<th>Roles</th>
 						</thead>
 						@foreach($usuarios as $usuario)
 						<tbody data-id="{{ $usuario->id }}">
 							<td>{{ $usuario->nombre }}</td>
 							<td>{{ $usuario->apellido }}</td>
 							<td>{{ $usuario->email }}</td>
+							<td>{{ $usuario->roles_id }}</td>
 							<td><a href="#" class="btn btn-danger btn-sm btn-eliminar_usuario" role="button">Eliminar</a></td>
 						</tbody>
 						@endforeach
