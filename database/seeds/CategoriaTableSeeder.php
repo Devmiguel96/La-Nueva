@@ -9,32 +9,32 @@ class CategoriaTableSeeder extends Seeder
 	public function run()
 	{
 		\DB::table('categorias')->insert(array(
-			'nombre' => 'Deportiva'
+			'nombre' => 'Deportiva',
 			'created_at'=>date('Y-m-d H:m:s'),
 			'updated_at'=>date('Y-m-d H:m:s')
 		));
 		\DB::table('categorias')->insert(array(
-				'nombre'=>'Judicial'
+				'nombre'=>'Judicial',
 				'created_at'=>date('Y-m-d H:m:s'),
 				'updated_at'=>date('Y-m-d H:m:s')
 		));
 		\DB::table('categorias')->insert(array(
-				'nombre'=>'Tecnologica'
+				'nombre'=>'Tecnologica',
 				'created_at'=>date('Y-m-d H:m:s'),
 				'updated_at'=>date('Y-m-d H:m:s')
 		));
 		\DB::table('categorias')->insert(array(
-				'nombre'=>'Economica'
+				'nombre'=>'Economica',
 				'created_at'=>date('Y-m-d H:m:s'),
 				'updated_at'=>date('Y-m-d H:m:s')
 		));
 		\DB::table('categorias')->insert(array(
-				'nombre'=>'Politica'
+				'nombre'=>'Politica',
 				'created_at'=>date('Y-m-d H:m:s'),
 				'updated_at'=>date('Y-m-d H:m:s')
 		));
 		\DB::table('categorias')->insert(array(
-				'nombre'=>'Otros'
+				'nombre'=>'Otros',
 				'created_at'=>date('Y-m-d H:m:s'),
 				'updated_at'=>date('Y-m-d H:m:s')
 		));
