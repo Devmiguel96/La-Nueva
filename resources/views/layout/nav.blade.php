@@ -114,8 +114,9 @@
                                     <li><a href="{{ url('/admin/noticias') }}">Administrar Noticias</a></li>
                                     <li><a href="{{ url('/admin/usuarios') }}">Administrar Usuarios</a></li>
                                     <li><a href="{{ route('programas.index') }}">Administrar Programas</a></li>
-                                    <li><a href="{{ url('/admin/top10') }}">Top 10</a></li>
                                     <li><a href="{{ url('/admin/crearadmin') }}">Agregar Admin</a></li>
+                                    <li><a href="{{ url('/admin/top10') }}">Top 10</a></li>
+                                    
                                     <li><a href="{{ url('/auth/logout') }}">Cerrar Session</a></li>
                                 </ul>
                             </li>
