@@ -1,4 +1,4 @@
-@extends('head')
+@extends('layout.nav2')
 
 @section('content')
 <div class="container-fluid">
@@ -17,21 +17,20 @@
 							</ul>
 						</div>
 					@endif
-
-					<form class="form-horizontal" role="form" method="POST" action="/couser/public/auth/login">
+						{!! Form::open(['url' => ('auth/login'), 'method' => 'POST','class'=>'form-horizontal','role'=>'form']) !!}
 						<input type="hidden" name="_token" value="{{ csrf_token() }}">
 
 						<div class="form-group">
-							<label class="col-md-4 control-label">E-Mailas</label>
+							{!! Form::label('email','Correo Electronico',['class'=>'col-md-4 control-label']) !!}
 							<div class="col-md-6">
-								<input type="email" class="form-control" name="email" value="{{ old('email') }}">
+							<input type="email" name="email" id="email" class="form-control" required>
 							</div>
 						</div>
 
 						<div class="form-group">
-							<label class="col-md-4 control-label">Password</label>
+							{!! Form::label('password','Contraseña',['class'=>'col-md-4 control-label']) !!}
 							<div class="col-md-6">
-								<input type="password" class="form-control" name="password">
+								<input type="password" name="password" id="password" class="form-control" required>
 							</div>
 						</div>
 
@@ -46,16 +45,21 @@
 						</div>
 
 						<div class="form-group">
-							<div class="col-md-6 col-md-offset-4">
-								<button type="submit" class="btn btn-primary" style="margin-right: 15px">
-									Login
+							<div class="text-center">
+								<button type="submit" class="btn btn-warning" style="margin-right: 15px">
+									L O G I N
 								</button>
 							</div>
 						</div>
-					</form>
+					{!! Form::close() !!}
 				</div>
 			</div>
 		</div>
 	</div>
+	<style>
+		#footer{
+			margin-top: 186px;
+		}
+	</style>
 </div>
 @endsection
