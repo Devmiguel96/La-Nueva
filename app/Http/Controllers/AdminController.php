@@ -22,9 +22,9 @@ class AdminController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function getIndex()
+	public function getCrearadmin()
 	{
-		
+		return view('admin.agregaradmin');
 	}
 
 	/**

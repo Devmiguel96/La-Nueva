@@ -4,7 +4,7 @@
 </div>
 <div class="form-group">
      {!! Form::label('detalle', 'Detalle') !!}
-	{!! Form::text('detalle',null,['class'=>'form-control','id'=>'ckeditor'])!!}
+	{!! Form::textarea('detalle', null, ['class' => 'form-control','rows'=>'3','id'=>'ckeditor'])!!}
 	<script>
         CKEDITOR.replace( 'ckeditor' );
     </script>

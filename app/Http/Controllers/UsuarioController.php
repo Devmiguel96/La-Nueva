@@ -15,7 +15,7 @@ class UsuarioController extends Controller {
 	public function __construct()
 	{
 		$this->middleware('auth',['except' => ['store','create']]);
-		$this->middleware('is_admin',['only' => ['create', 'edit','show']]);
+		$this->middleware('is_admin',['only' => ['create','show']]);
 	}
 
 	/**
@@ -44,12 +44,21 @@ class UsuarioController extends Controller {
 	 * @return Response
 	 */
 	public function store(CrearUsuarioRequest $request)
-	{
-		$usuario = new Usuario($request->all());
-		$usuario->roles_id = '2';
-		$usuario->save();
+	{	if (Auth::user()->roles_id == 1) 
+		{
+			$usuario = new Usuario($request->all());
+			$usuario->roles_id = '1';
+			$usuario->save();
 
-		return Redirect('/');
+			return Redirect('/');
+		}else{
+			$usuario = new Usuario($request->all());
+			$usuario->roles_id = '2';
+			$usuario->save();
+
+			return Redirect('/');
+		}
+		
 	}
 
 	/**
