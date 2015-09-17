@@ -24,6 +24,11 @@ summary {
 }
 .time{
   color:#666;
+  font-size: 11px;
+  margin-top: -14px;
+}
+.by{
+  margin-top: -11px;
 }
 .titulo{
   color: #393939;

@@ -21,8 +21,8 @@
 							<th>Nombre</th>
 							<th>Apellido</th>
 							<th>Email</th>
-							<th>Eliminar</th>
 							<th>Roles</th>
+							<th>Eliminar</th>
 						</thead>
 						@foreach($usuarios as $usuario)
 						<tbody data-id="{{ $usuario->id }}">

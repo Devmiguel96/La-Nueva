@@ -5,11 +5,10 @@
 	<div class="row">
 		<div class="col-md-10 col-md-offset-1">
 			<div class="panel panel-default">
-				<div class="panel-heading">Noticia @foreach( $tipos as $tipo){!! $tipo->categoria !!}							</div>									
+				<div class="panel-heading"><strong>Categoria</strong>@foreach( $tipos as $tipo){!! $tipo->categoria !!}							</div>									
 					<div class="panel-body">
-					<a href="{{ url('/noticias') }}" class="btn btn-warning" role="button">Atras</a>
-					<p class="text-right"><strong>Publicado por:</strong> {!! $tipo->name !!} {!! $tipo->last_name !!} </p>
-  						<p class="time text-right"><span class="glyphicon glyphicon-time"></span>
+					<p class="by text-left"><strong>Por:</strong> {!! $tipo->name !!} {!! $tipo->last_name !!} </p>
+  						<p class="time text-left"><span class="glyphicon glyphicon-time"></span>
   						 <?php 
   						 	$fecha = $tipo->created_at;
   						 	$dt = new DateTime($fecha);
