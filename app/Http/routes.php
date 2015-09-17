@@ -18,6 +18,10 @@ Route::get('/',function(){
 	
 	return Redirect(url('/noticias'));
 });
+Route::get('home',function(){
+	
+	return Redirect(url('/noticias'));
+});
 
 Route::controllers([
 	'categorias'=>'CategoriasController',
