@@ -10,21 +10,33 @@ class CategoriaTableSeeder extends Seeder
 	{
 		\DB::table('categorias')->insert(array(
 			'nombre' => 'Deportiva'
+			'created_at'=>date('Y-m-d H:m:s'),
+			'updated_at'=>date('Y-m-d H:m:s')
 		));
 		\DB::table('categorias')->insert(array(
 				'nombre'=>'Judicial'
+				'created_at'=>date('Y-m-d H:m:s'),
+				'updated_at'=>date('Y-m-d H:m:s')
 		));
 		\DB::table('categorias')->insert(array(
 				'nombre'=>'Tecnologica'
+				'created_at'=>date('Y-m-d H:m:s'),
+				'updated_at'=>date('Y-m-d H:m:s')
 		));
 		\DB::table('categorias')->insert(array(
 				'nombre'=>'Economica'
+				'created_at'=>date('Y-m-d H:m:s'),
+				'updated_at'=>date('Y-m-d H:m:s')
 		));
 		\DB::table('categorias')->insert(array(
 				'nombre'=>'Politica'
+				'created_at'=>date('Y-m-d H:m:s'),
+				'updated_at'=>date('Y-m-d H:m:s')
 		));
 		\DB::table('categorias')->insert(array(
 				'nombre'=>'Otros'
+				'created_at'=>date('Y-m-d H:m:s'),
+				'updated_at'=>date('Y-m-d H:m:s')
 		));
 	}
 }
