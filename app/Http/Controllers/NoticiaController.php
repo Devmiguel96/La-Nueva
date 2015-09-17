@@ -14,6 +14,7 @@ class NoticiaController extends Controller {
 	public function __construct()
 	{
 		$this->middleware('auth',['except' => ['getIndex','getMostrar']]);
+		$this->middleware('is_admin',['only' => ['crear','editar','foto','eliminar']]);
 	}
 
 	/**
@@ -221,7 +222,7 @@ class NoticiaController extends Controller {
 		}
 		
 		\File::delete($var);
-		*/
+		
 		Noticia::destroy($id);
 
 		$mensaje = 'Noticia Eliminada';
@@ -229,7 +230,7 @@ class NoticiaController extends Controller {
 		if ($request->ajax())
 		{
 			return $mensaje;
-		}
+		}*/
 		
 	}
 

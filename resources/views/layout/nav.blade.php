@@ -102,7 +102,7 @@
                     @if (Auth::guest())
                         <li>
                         <a href="{{ route('usuarios.index') }}" class="page-scroll" ><span class="glyphicon glyphicon-user" ></span> Login</a>
-                        @elseif(Auth::user()->IsAdmin())
+                        @elseif(Auth::user()->isAdmin())
                             <li class="dropdown">
                                 <a href="#"  class="drop dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{ Auth::user()->nombre }} <span class="caret"></span></a>
                                 <ul class="dropdown-menu menu1"   role="menu">
