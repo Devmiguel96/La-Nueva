@@ -59,7 +59,7 @@ class AdminController extends Controller {
 		$usuarios = \DB::table('usuarios')
 		->selectRaw('count(usuarios.id) as cantidad_noticias,nombre,apellido')
 		->join('noticias','usuarios.id','=','noticias.usuarios_id')
-		->groupBy('usuarios_id')
+		->groupBy('usuarios_id','nombre','apellido')
 		->orderBy('cantidad_noticias','DESC')
 		->limit(10)
 		->get();
