@@ -50,7 +50,7 @@ class UsuarioController extends Controller {
 		$usuario->roles_id = '2';
 		$usuario->save();
 
-		return Redirect('/');
+		return Redirect('/login');
 		
 		
 	}

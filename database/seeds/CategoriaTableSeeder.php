@@ -9,40 +9,55 @@ class CategoriaTableSeeder extends Seeder
 	public function run()
 	{
 		\DB::table('categorias')->insert(array(
-			'nombre' => 'Deportiva',
+			'nombre' => 'DEPORTES',
 			'created_at'=>date('Y-m-d H:m:s'),
 			'updated_at'=>date('Y-m-d H:m:s')
 		));
 		\DB::table('categorias')->insert(array(
-				'nombre'=>'Judicial',
+				'nombre'=>'COLOMBIA',
 				'created_at'=>date('Y-m-d H:m:s'),
 				'updated_at'=>date('Y-m-d H:m:s')
 		));
 		\DB::table('categorias')->insert(array(
-				'nombre'=>'Tecnologica',
+				'nombre'=>'TECNOLOGICA',
 				'created_at'=>date('Y-m-d H:m:s'),
 				'updated_at'=>date('Y-m-d H:m:s')
 		));
 		\DB::table('categorias')->insert(array(
-				'nombre'=>'Economica',
+				'nombre'=>'ECONOMÍCA',
 				'created_at'=>date('Y-m-d H:m:s'),
 				'updated_at'=>date('Y-m-d H:m:s')
 		));
 		\DB::table('categorias')->insert(array(
-				'nombre'=>'Politica',
+				'nombre'=>'POLÍTICA',
 				'created_at'=>date('Y-m-d H:m:s'),
 				'updated_at'=>date('Y-m-d H:m:s')
 		));
 		\DB::table('categorias')->insert(array(
-				'nombre'=>'Otros',
+				'nombre'=>'MUNDO',
+				'created_at'=>date('Y-m-d H:m:s'),
+				'updated_at'=>date('Y-m-d H:m:s')
+		));
+		\DB::table('categorias')->insert(array(
+				'nombre'=>'OPINIÓN',
+				'created_at'=>date('Y-m-d H:m:s'),
+				'updated_at'=>date('Y-m-d H:m:s')
+		));
+		\DB::table('categorias')->insert(array(
+				'nombre'=>'ENTRETENIMIENTO',
+				'created_at'=>date('Y-m-d H:m:s'),
+				'updated_at'=>date('Y-m-d H:m:s')
+		));
+		\DB::table('categorias')->insert(array(
+				'nombre'=>'OTROS..',
 				'created_at'=>date('Y-m-d H:m:s'),
 				'updated_at'=>date('Y-m-d H:m:s')
 		));
 		\DB::table('usuarios')->insert(array(
-				'nombre' =>'Admin',
-				'apellido'=>'Admin',
-				'email'=>'admin@hotmail.com',
-				'password'=>\Hash::make('administrador'),
+				'nombre' =>'la nueva',
+				'apellido'=>'estereo',
+				'email'=>'lanueva@hotmail.com',
+				'password'=>\Hash::make('lanueva'),
 				'roles_id'=>'1',
 				'created_at'=>date('Y-m-d H:m:s'),
 				'updated_at'=>date('Y-m-d H:m:s')
