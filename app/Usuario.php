@@ -49,6 +49,6 @@ class Usuario extends Model implements AuthenticatableContract, CanResetPassword
 
 	public function isAdmin()
 	{
-		return $this->roles_id == '1';
+		return $this->roles_id === '1';
 	}
 }

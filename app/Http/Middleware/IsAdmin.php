@@ -23,7 +23,7 @@ class IsAdmin {
 	 */
 	public function handle($request, Closure $next)
 	{
-		if( ! $this->auth->user()->roles_id == 1)
+		if( ! $this->auth->user()->roles_id === '1')
 		{
 			//$this->auth->logout();
 
