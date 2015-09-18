@@ -26,6 +26,7 @@ class AdminController extends Controller {
 	{
 		return view('admin.agregaradmin');
 	}
+	
 	public function postGuardaradmin()
 	{
 		$usuario = new Usuario($request->all());
