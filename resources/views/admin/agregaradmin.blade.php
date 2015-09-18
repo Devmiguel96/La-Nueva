@@ -18,7 +18,7 @@
 						</div>
 					@endif
 					
-						{!! Form::open(['route' => 'usuarios.store', 'method' => 'POST']) !!}
+						{!! Form::open(['url' => ('admin/guardaradmin'), 'method' => 'POST']) !!}
 	                     	<div class="form-group">
 								{!! Form::label('nombre', 'Nombre') !!}
 								{!! Form::text('nombre',null,['class'=>'form-control'])!!}

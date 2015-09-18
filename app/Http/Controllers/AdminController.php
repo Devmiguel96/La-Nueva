@@ -26,6 +26,14 @@ class AdminController extends Controller {
 	{
 		return view('admin.agregaradmin');
 	}
+	public function postGuardaradmin()
+	{
+		$usuario = new Usuario($request->all());
+		$usuario->roles_id = '1';
+		$usuario->save();
+
+		return Redirect('/');
+	}
 
 	/**
 	 * Show the form for creating a new resource.

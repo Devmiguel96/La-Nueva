@@ -44,20 +44,14 @@ class UsuarioController extends Controller {
 	 * @return Response
 	 */
 	public function store(CrearUsuarioRequest $request)
-	{	if (Auth::user()->roles_id == 1) 
-		{
-			$usuario = new Usuario($request->all());
-			$usuario->roles_id = '1';
-			$usuario->save();
+	{	
+			
+		$usuario = new Usuario($request->all());
+		$usuario->roles_id = '2';
+		$usuario->save();
 
-			return Redirect('/');
-		}else{
-			$usuario = new Usuario($request->all());
-			$usuario->roles_id = '2';
-			$usuario->save();
-
-			return Redirect('/');
-		}
+		return Redirect('/');
+		
 		
 	}
 
