@@ -185,8 +185,8 @@
                     <div class="col-sm-4">
                         <div class="team-member">
                             <img src="img/equipo/1.jpg" class="img-responsive img-circle" alt="">
-                            <h4>Kay Garland</h4>
-                            <p class="text-muted">Lead Designer</p>
+                            <h4>Roman Abad Gutierrez</h4>
+                            <p class="text-muted">Director</p>
                             <ul class="list-inline social-buttons">
                                 <li><a href="#"><i class="fa fa-twitter"></i></a>
                                 </li>
@@ -198,8 +198,8 @@
                     <div class="col-sm-4">
                         <div class="team-member">
                             <img src="img/equipo/2.jpg" class="img-responsive img-circle" alt="">
-                            <h4>Larry Parker</h4>
-                            <p class="text-muted">Lead Marketer</p>
+                            <h4>Maz Barraza Sanjuan</h4>
+                            <p class="text-muted">Locutor</p>
                             <ul class="list-inline social-buttons">
                                 <li><a href="#"><i class="fa fa-twitter"></i></a>
                                 </li>
@@ -211,8 +211,8 @@
                     <div class="col-sm-4">
                         <div class="team-member">
                             <img src="img/equipo/3.jpg" class="img-responsive img-circle" alt="">
-                            <h4>Diana Pertersen</h4>
-                            <p class="text-muted">Lead Developer</p>
+                            <h4>Carlos Jr Guerrero Gutierrez</h4>
+                            <p class="text-muted">Consola de Sonido</p>
                             <ul class="list-inline social-buttons">
                                 <li><a href="#"><i class="fa fa-twitter"></i></a>
                                 </li>
@@ -225,9 +225,9 @@
                 <div class="slider2">
                     <div class="col-sm-4">
                         <div class="team-member">
-                            <img src="img/equipo/1.jpg" class="img-responsive img-circle" alt="">
-                            <h4>Kay Garland</h4>
-                            <p class="text-muted">Lead Designer</p>
+                            <img src="img/equipo/4.jpg" class="img-responsive img-circle" alt="">
+                            <h4>Geison Gutierrez</h4>
+                            <p class="text-muted">Locutor</p>
                             <ul class="list-inline social-buttons">
                                 <li><a href="#"><i class="fa fa-twitter"></i></a>
                                 </li>
@@ -238,9 +238,9 @@
                     </div>
                     <div class="col-sm-4">
                         <div class="team-member">
-                            <img src="img/equipo/2.jpg" class="img-responsive img-circle" alt="">
-                            <h4>Larry Parker</h4>
-                            <p class="text-muted">Lead Marketer</p>
+                            <img src="img/equipo/5.jpg" class="img-responsive img-circle" alt="">
+                            <h4>Armando Rodriguez Gutierrez</h4>
+                            <p class="text-muted">Consola de Sonido</p>
                             <ul class="list-inline social-buttons">
                                 <li><a href="#"><i class="fa fa-twitter"></i></a>
                                 </li>
@@ -251,9 +251,9 @@
                     </div>
                     <div class="col-sm-4">
                         <div class="team-member">
-                            <img src="img/equipo/3.jpg" class="img-responsive img-circle" alt="">
-                            <h4>Diana Pertersen</h4>
-                            <p class="text-muted">Lead Developer</p>
+                            <img src="img/equipo/6.jpg" class="img-responsive img-circle" alt="">
+                            <h4>Cesar Mendoza Mendoza</h4>
+                            <p class="text-muted">Periodista</p>
                             <ul class="list-inline social-buttons">
                                 <li><a href="#"><i class="fa fa-twitter"></i></a>
                                 </li>
@@ -266,9 +266,9 @@
                 <div class="slider3">
                     <div class="col-sm-4">
                         <div class="team-member">
-                            <img src="img/equipo/1.jpg" class="img-responsive img-circle" alt="">
-                            <h4>Kay Garland</h4>
-                            <p class="text-muted">Lead Designer</p>
+                            <img src="img/equipo/7.jpg" class="img-responsive img-circle" alt="">
+                            <h4>Edgardo Castro Salas</h4>
+                            <p class="text-muted">Locutor</p>
                             <ul class="list-inline social-buttons">
                                 <li><a href="#"><i class="fa fa-twitter"></i></a>
                                 </li>
@@ -279,9 +279,9 @@
                     </div>
                     <div class="col-sm-4">
                         <div class="team-member">
-                            <img src="img/equipo/2.jpg" class="img-responsive img-circle" alt="">
-                            <h4>Larry Parker</h4>
-                            <p class="text-muted">Lead Marketer</p>
+                            <img src="img/equipo/8.jpg" class="img-responsive img-circle" alt="">
+                            <h4>Pedro Marchena Angulo</h4>
+                            <p class="text-muted">Locutor</p>
                             <ul class="list-inline social-buttons">
                                 <li><a href="#"><i class="fa fa-twitter"></i></a>
                                 </li>
@@ -292,9 +292,9 @@
                     </div>
                     <div class="col-sm-4">
                         <div class="team-member">
-                            <img src="img/equipo/3.jpg" class="img-responsive img-circle" alt="">
+                            <img src="img/equipo/9.jpg" class="img-responsive img-circle" alt="">
                             <h4>Diana Pertersen</h4>
-                            <p class="text-muted">Lead Developer</p>
+                            <p class="text-muted">Locutor</p>
                             <ul class="list-inline social-buttons">
                                 <li><a href="#"><i class="fa fa-twitter"></i></a>
                                 </li>
