@@ -184,7 +184,7 @@
                 <div class="slider1">
                     <div class="col-sm-4">
                         <div class="team-member">
-                            <img src="img/equipo/1.jpg" class="img-responsive img-circle" alt="">
+                            <img src="img/equipo/11.jpg" class="img-responsive img-circle" alt="">
                             <h4>Roman Abad Gutierrez</h4>
                             <p class="text-muted">Director</p>
                             <ul class="list-inline social-buttons">
@@ -197,7 +197,7 @@
                     </div>
                     <div class="col-sm-4">
                         <div class="team-member">
-                            <img src="img/equipo/2.jpg" class="img-responsive img-circle" alt="">
+                            <img src="img/equipo/22.jpg" class="img-responsive img-circle" alt="">
                             <h4>Maz Barraza Sanjuan</h4>
                             <p class="text-muted">Locutor</p>
                             <ul class="list-inline social-buttons">
@@ -210,7 +210,7 @@
                     </div>
                     <div class="col-sm-4">
                         <div class="team-member">
-                            <img src="img/equipo/3.jpg" class="img-responsive img-circle" alt="">
+                            <img src="img/equipo/33.jpg" class="img-responsive img-circle" alt="">
                             <h4>Carlos Jr Guerrero Gutierrez</h4>
                             <p class="text-muted">Consola de Sonido</p>
                             <ul class="list-inline social-buttons">
