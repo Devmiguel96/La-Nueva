@@ -35,7 +35,7 @@ class AdminController extends Controller {
 		$usuario->roles_id = '1';
 		$usuario->save();
 
-		return Redirect(url('admin/usuario'));
+		return Redirect(url('admin/usuarios'));
 	}
 
 	/**
