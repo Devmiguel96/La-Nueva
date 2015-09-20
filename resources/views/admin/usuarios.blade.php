@@ -34,7 +34,7 @@
 									$iduser = $usuario->id;
 									$id = Auth::user()->id;
 									if ($id == $iduser) {
-										echo '<a href="#" class="btn btn-danger btn-sm btn-eliminar_usuario" disabled role="button">Eliminar</a>';
+										echo '';
 									}else{
 										echo '<a href="#" class="btn btn-danger btn-sm btn-eliminar_usuario" role="button">Eliminar</a>';
 									}
