@@ -41,12 +41,11 @@
 									}
 								?>
 							</td>
-							<td>
-								<?php 
-									if ($usuario->roles_id == '2') {
-										echo '<a href="{{ url("admin/volveradmin,usuario->id") }}" class="btn btn-primary btn-sm" role="button">Dar Permisos</a>';
-									}
-								?>
+							<td> 
+								@if ($usuario->roles_id == '2') {
+									<a href="{{ url('/admin/volveradmin,usuario->id') }}" class="btn btn-primary btn-sm" role="button">Dar Permisos</a>
+								@endif
+								
 							</td>
 						</tbody>
 						@endforeach
