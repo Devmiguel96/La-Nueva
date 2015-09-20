@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
     <title>La Nueva 101.6 MHZ</title>
+    <meta name="description" content="Lanuevastereo K 18 #21 – 45 2do piso ofi # 3 Barrio centro Sabanalarga (Atlantico). 8783134-8780418. Movil:3016026767.">
+    <meta name="keywords" content="emisora,lanueva,lanuevaestereo,101.6,sabanalarga,radio,lapirinola,noticias,janus">
+    <meta name="author" content="Janus IT SAS">
 
     <link href="{{asset('css/agency2.css')}}" rel="stylesheet">
     
