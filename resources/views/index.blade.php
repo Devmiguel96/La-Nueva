@@ -427,13 +427,13 @@
     </div>
   </div> 
   <div class="escucha">
-    <a href="javascript:window.open('http://www.ustream.tv/embed/14878799?v=3&amp;wmode=direct','La Nueva 101.6 Mhz, Primerisima!!!','width=600,height=400') "  id="transmision">Escucha tu Emisora la Nueva 101.6 mhz <span class="glyphicon glyphicon-volume-up"></span></a>
+    <a href="javascript:window.open('http://www.ustream.tv/embed/14878799?v=3&amp;wmode=direct','La Nueva 101.6 Mhz, Primerisima!!!','width=600,height=400') "  id="transmision">Escucha la Nueva 101.6 mhz</a>
 </div>
 @endsection
 @section('script')
 <script>
     jQuery(window).scroll(function(){
-    if (jQuery(this).scrollTop() > 300)
+    if (jQuery(this).scrollTop() > 1000)
         jQuery('.escucha').fadeIn(500);
     else
         jQuery('.escucha').fadeOut();
