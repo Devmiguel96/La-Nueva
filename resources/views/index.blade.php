@@ -433,8 +433,8 @@
 @section('script')
 <script>
     jQuery(window).scroll(function(){
-    if (jQuery(this).scrollTop() > 160)
-        jQuery('.escucha').fadeIn();
+    if (jQuery(this).scrollTop() > 300)
+        jQuery('.escucha').fadeIn(500);
     else
         jQuery('.escucha').fadeOut();
 });

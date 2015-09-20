@@ -9,30 +9,29 @@ body {
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 .escucha{
-        background-color: rgba(0, 0, 0, 0.52);
-    height: 83px;
+    background-color: rgba(0, 0, 0, 0.52);
+    height: 61px;
     overflow: hidden;
     padding: 17px 16px;
     position: fixed;
     left: 20px;
-    
     top: auto;
-    width: 239px;
+    width: 300px;
     z-index: 90;
     border-radius:5px;
     bottom: 20px;
-    }
-    .escucha>a{
-        font-weight: bold;
-        font-size: 15px;
-        color:#ffffff;
-    }
-    .escucha>a:hover ,.escucha>a:focus{
-        text-decoration: none;
-        color: #fec503;
+}
+.escucha>a{
+    font-weight: bold;
+    font-size: 22px;
+    color:#ffffff;
+    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+}
+.escucha>a:hover ,.escucha>a:focus{
+    text-decoration: none;
+    color: #fec503;
 
-    }
-
+}
 /*esta linea es para el slider de http://unslider.com/*/
 .banner { 
     position: relative; 
