@@ -38,6 +38,16 @@ class AdminController extends Controller {
 		return Redirect(url('admin/usuarios'));
 	}
 
+	public function postVolveradmin($id){
+
+		$usuario = Usuario::findOrFail($id);
+		$usuario->roles_id = '1';
+		$usuario->save();
+
+		return Redirect('admin/usuarios');
+		
+	}
+
 	/**
 	 * Show the form for creating a new resource.
 	 *

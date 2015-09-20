@@ -23,6 +23,7 @@
 							<th>Email</th>
 							<th>Roles</th>
 							<th>Eliminar</th>
+							<th>Permisos</th>
 						</thead>
 						@foreach($usuarios as $usuario)
 						<tbody data-id="{{ $usuario->id }}">
@@ -37,6 +38,13 @@
 										echo '';
 									}else{
 										echo '<a href="#" class="btn btn-danger btn-sm btn-eliminar_usuario" role="button">Eliminar</a>';
+									}
+								?>
+							</td>
+							<td>
+								<?php 
+									if ($usuario->id == '2') {
+										echo "<a href='{{ url('admin/volveradmin,usuario->id') }}' class='btn btn-primary btn-sm' role='button'>Dar Permisos</a>";
 									}
 								?>
 							</td>
