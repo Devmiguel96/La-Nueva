@@ -8,6 +8,30 @@ body {
     overflow-x: hidden;
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
+.escucha{
+        background-color: rgba(0, 0, 0, 0.52);
+    height: 83px;
+    overflow: hidden;
+    padding: 17px 16px;
+    position: fixed;
+    left: 20px;
+    
+    top: auto;
+    width: 239px;
+    z-index: 90;
+    border-radius:5px;
+    bottom: 20px;
+    }
+    .escucha>a{
+        font-weight: bold;
+        font-size: 15px;
+        color:#ffffff;
+    }
+    .escucha>a:hover ,.escucha>a:focus{
+        text-decoration: none;
+        color: #fec503;
+
+    }
 
 /*esta linea es para el slider de http://unslider.com/*/
 .banner { 
