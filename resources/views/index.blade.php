@@ -185,7 +185,7 @@
                     <div class="col-sm-4">
                         <div class="team-member">
                             <img src="img/equipo/11.jpg" class="img-responsive img-circle" alt="">
-                            <h4>Roman Abad Gutierrez</h4>
+                            <h4>Roman Gutierrez</h4>
                             <p class="text-muted">Director</p>
                             <ul class="list-inline social-buttons">
                                 <li><a href="#"><i class="fa fa-twitter"></i></a>
