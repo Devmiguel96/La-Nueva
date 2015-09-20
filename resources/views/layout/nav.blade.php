@@ -138,7 +138,7 @@
         <!-- /.container-fluid -->
     </nav>
          <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <script src="{{ asset('js/jquery.js') }}"></script>
 
     <script src="js/functions.js"></script>
 
@@ -161,6 +161,6 @@
 
 
 @yield('content')
-
+@yield('script')
 </body>
 </html>
