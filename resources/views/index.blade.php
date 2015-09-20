@@ -433,10 +433,12 @@
 @section('script')
 <script>
     jQuery(window).scroll(function(){
-    if (jQuery(this).scrollTop() > 1000)
-        jQuery('.escucha').fadeIn(500);
-    else
-        jQuery('.escucha').fadeOut();
-});
+        if(jQuery(this).height() + jQuery(this).scrollTop() == $(document).height()) {
+            jQuery('.escucha').fadeOut();
+        }else if (jQuery(this).scrollTop() > 1000)
+            jQuery('.escucha').fadeIn(500);
+        else
+            jQuery('.escucha').fadeOut();
+    });
 </script>
 @endsection
