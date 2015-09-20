@@ -46,7 +46,7 @@ class AdminController extends Controller {
 	public function getUsuarios(Request $request)
 	{		
 
-		$usuarios = Usuario::name($request->get('name'))->paginate(15);
+		$usuarios = Usuario::name($request->get('name'))->orderBy('roles_id', 'ASC')->paginate(15);
 		$usuarios->setPath('');
 		return view('admin.usuarios',compact('usuarios'));
 	}

@@ -30,7 +30,16 @@
 							<td>{{ $usuario->apellido }}</td>
 							<td>{{ $usuario->email }}</td>
 							<td>{{ $usuario->roles_id }}</td>
-							<td><a href="#" class="btn btn-danger btn-sm btn-eliminar_usuario" role="button">Eliminar</a></td>
+							<td><?php 
+									$iduser = $usuario->id;
+									$id = Auth::user()->id;
+									if ($id == $iduser) {
+										echo '<a href="#" class="btn btn-danger btn-sm btn-eliminar_usuario" disabled role="button">Eliminar</a>';
+									}else{
+										echo '<a href="#" class="btn btn-danger btn-sm btn-eliminar_usuario" role="button">Eliminar</a>';
+									}
+								?>
+							</td>
 						</tbody>
 						@endforeach
 					</table>
