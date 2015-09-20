@@ -7,6 +7,8 @@ use couser\Noticia;
 use Storage;
 use Illuminate\Http\Request;
 
+use couser\Http\Requests\CrearUsuarioRequest;
+
 class AdminController extends Controller {
 
 
@@ -27,7 +29,7 @@ class AdminController extends Controller {
 		return view('admin.agregaradmin');
 	}
 	
-	public function postGuardaradmin()
+	public function postGuardaradmin(CrearUsuarioRequest $request)
 	{
 		$usuario = new Usuario($request->all());
 		$usuario->roles_id = '1';
