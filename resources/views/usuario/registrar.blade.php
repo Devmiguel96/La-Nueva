@@ -58,11 +58,13 @@ $(document).ready(function(){
     	if (pas1.value.length < 8) {
     		$('#pass1').css('background-color','rgba(224, 8, 8, 0.26)'); 
     		$('.mal1').show().prop('title', 'tener mas de 8 Caracteres');
-    		$('.bien1').hide(); 
+    		$('.bien1').hide();
+    		$('#botom').prop('disabled', true); 
     	}else{
     		$('.mal1').hide();
     		$('#pass1').css('background-color','rgba(51, 226, 32, 0.38)');
     		$('.bien1').show(); 
+    		$('#botom').prop('disabled', true);
     	}
     }
     if (pas1.value!= "" && pas2.value !="") {
@@ -74,13 +76,13 @@ $(document).ready(function(){
 				    	$('.bien2').show();
 						$('#pass1').css('background-color','rgba(51, 226, 32, 0.38)'); 
 						$('#pass2').css('background-color','rgba(51, 226, 32, 0.38)'); 
-						$('#enviar').prop('disabled', false);
+						$('#botom').prop('disabled', false);
 				    	$('.mal2').hide();
 				    	$('.mal1').hide();
 	    			}else{
 	    				$('.mal1').show().prop('title', 'tener mas de 8 Caracteres');
 				    	$('.mal2').show().prop('title', 'tener mas de 8 Caracteres');;
-				    	$('#enviar').prop('disabled', true);
+				    	$('#botom').prop('disabled', true);
 				    	$('.bien1').hide();
 				    	$('.bien2').hide();
 				    	$('#pass1').css('background-color','rgba(224, 8, 8, 0.26)'); 
@@ -90,7 +92,7 @@ $(document).ready(function(){
 		    	}else{
 			    	$('.mal1').show().prop('title', 'Contraseña no Coinciden');
 			    	$('.mal2').show().prop('title', 'Contraseña no Coinciden');;
-			    	$('#enviar').prop('disabled', true);
+			    	$('#botom').prop('disabled', true);
 			    	$('.bien1').hide();
 			    	$('.bien2').hide();
 			    	$('#pass1').css('background-color','rgba(224, 8, 8, 0.26)'); 
@@ -101,7 +103,7 @@ $(document).ready(function(){
 	    }else{
 	    	$('.pass').hide();
 			$('.pas').hide();
-			$('#enviar').prop('disabled', true);
+			$('#botom').prop('disabled', true);
 
 	    }
 	}
