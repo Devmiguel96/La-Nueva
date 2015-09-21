@@ -41,8 +41,10 @@
 @section('script')
 <script>
 $(document).ready(function(){
-	$('.pass').hide();
-	$('.pas').hide();
+	$('.mal2').hide();
+	$('.mal1').hide();
+	$('.bien1').hide();
+	$('.bien2').hide();
 	$('#botom').prop('disabled', true);
 
 	document.getElementById("pass1").addEventListener("keyup", myFunction);
@@ -52,19 +54,36 @@ $(document).ready(function(){
 	function myFunction() {
     	var pas1 = document.getElementById("pass1");
     	var pas2 = document.getElementById("pass2");
+    	if (pas1.value != "") {
+    		if (pas1.value.length < 8) {
+    			$('#pass1').css('background-color','rgba(224, 8, 8, 0.26)'); 
+    			$('.mal1').show();
+    			$('#enviar').prop('disabled', true);
+    			$('.bien1').hide(); 
+    		}else{
+    			$('.mal1').hide();
+    			$('#pass1').css('background-color','rgba(51, 226, 32, 0.38)');
+    			$('.bien1').show(); 
+    			$('#enviar').prop('disabled', true);
+    		}
+    	}
     	if (pas1.value!= "" && pas2.value !="") {
     		if (pas1.value == pas2.value){
-	    		$('.pas').show();
-				$('#pass1').css('background-color','rgba(51, 226, 32, 0.38)'); 
-				$('#pass2').css('background-color','rgba(51, 226, 32, 0.38)'); 
-				$('.pass').hide();
-				$('#botom').prop('disabled', false);
+	    		$('.bien1').show();
+			    	$('.bien2').show();
+					$('#pass1').css('background-color','rgba(51, 226, 32, 0.38)'); 
+					$('#pass2').css('background-color','rgba(51, 226, 32, 0.38)'); 
+					$('#enviar').prop('disabled', false);
+			    	$('.mal2').hide();
+			    	$('.mal1').hide();
 	    	}else{
-	    		$('.pass').show();
-	    		$('.pas').hide();
-	    		$('#pass1').css('background-color','rgba(224, 8, 8, 0.26)'); 
-				$('#pass2').css('background-color','rgba(224, 8, 8, 0.26)'); 
-				$('#botom').prop('disabled', true);
+	    		$('.mal1').show();
+			    	$('.mal2').show();
+			    	$('#enviar').prop('disabled', true);
+			    	$('.bien1').hide();
+			    	$('.bien2').hide();
+			    	$('#pass1').css('background-color','rgba(224, 8, 8, 0.26)'); 
+					$('#pass2').css('background-color','rgba(224, 8, 8, 0.26)');
 			}
     	}else{
     		$('.pass').hide();
