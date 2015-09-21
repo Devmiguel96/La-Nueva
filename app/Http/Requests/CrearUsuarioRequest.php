@@ -26,7 +26,7 @@ class CrearUsuarioRequest extends Request {
 			'nombre'=>'required|min:5|max:45',
 			'apellido'=>'required|min:5|max:45',
 			'email'=>'required|email|unique:usuarios',
-			'password'=>'required|min:5|max:30',
+			'password'=>'required|confirmed|min:5|max:30',
 		];
 	}
 

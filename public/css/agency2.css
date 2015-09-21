@@ -8,7 +8,14 @@ body {
     overflow-x: hidden;
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
-
+.pas{
+    width: 17px;
+    height: 18px;
+}
+.pass{
+    width: 17px;
+    height: 18px;
+}
 .text-muted {
     color: #777;
 }
