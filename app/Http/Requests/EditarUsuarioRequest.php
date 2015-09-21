@@ -34,6 +34,7 @@ class EditarUsuarioRequest extends Request {
 			'nombre'=>'required|min:5|max:45',
 			'apellido'=>'required|min:5|max:45',
 			'email'=>'unique:usuarios,email,'.$this->route->getParameter('usuarios'),
+			'password'=>'min:8|max:30'
 		];
 	}
 

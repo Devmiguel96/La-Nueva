@@ -43,7 +43,7 @@
 							</td>
 							<td> 
 								@if ($usuario->roles_id == '2')
-									<a href="{{ url('/admin/volveradmin,$usuario->id') }}" class="btn btn-primary btn-sm" role="button">Dar Permisos</a>
+									<a href="{{ url('/admin/volveradmin/')}}/{{$usuario->id}}" class="btn btn-primary btn-sm" role="button">Dar Permisos</a>
 								@endif
 								
 							</td>
