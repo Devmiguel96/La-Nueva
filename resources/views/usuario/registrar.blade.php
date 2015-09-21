@@ -22,7 +22,7 @@
 	                     	@include('usuario.partials.form')
 							<div class="form-group">
 								<div class="col-md-6 col-md-offset-4">
-									{!! Form::submit('REGISTRAR',['class' => 'btn btn-warning']) !!}
+									{!! Form::submit('REGISTRAR',['class' => 'btn btn-warning','id'=>'botom']) !!}
 								</div>
 							</div>
 						{!! Form::close() !!}	
@@ -37,5 +37,43 @@
 		}
 	</style>
 </div>
+@endsection
+@section('script')
+<script>
+$(document).ready(function(){
+	$('.pass').hide();
+	$('.pas').hide();
+	$('#botom').prop('disabled', true);
+
+	document.getElementById("pass1").addEventListener("keyup", myFunction);
+
+	document.getElementById("pass2").addEventListener("keyup", myFunction);
+
+	function myFunction() {
+    	var pas1 = document.getElementById("pass1");
+    	var pas2 = document.getElementById("pass2");
+    	if (pas1.value!= "" && pas2.value !="") {
+    		if (pas1.value == pas2.value){
+	    		$('.pas').show();
+				$('#pass1').css('background-color','rgba(51, 226, 32, 0.38)'); 
+				$('#pass2').css('background-color','rgba(51, 226, 32, 0.38)'); 
+				$('.pass').hide();
+				$('#botom').prop('disabled', false);
+	    	}else{
+	    		$('.pass').show();
+	    		$('.pas').hide();
+	    		$('#pass1').css('background-color','rgba(224, 8, 8, 0.26)'); 
+				$('#pass2').css('background-color','rgba(224, 8, 8, 0.26)'); 
+				$('#botom').prop('disabled', true);
+			}
+    	}else{
+    		$('.pass').hide();
+			$('.pas').hide();
+			$('#botom').prop('disabled', true);
+    	}
+	    
+	}
+});
+</script>
 @endsection
 

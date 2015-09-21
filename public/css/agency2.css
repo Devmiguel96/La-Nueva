@@ -11,10 +11,14 @@ body {
 .pas{
     width: 17px;
     height: 18px;
+    margin-left: 4px;
+    margin-bottom: 3px;
 }
 .pass{
     width: 17px;
     height: 18px;
+    margin-left: 4px;
+    margin-bottom: 3px;
 }
 .text-muted {
     color: #777;
