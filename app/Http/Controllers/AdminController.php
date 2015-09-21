@@ -38,7 +38,7 @@ class AdminController extends Controller {
 		return Redirect(url('admin/usuarios'));
 	}
 
-	public function postVolveradmin($id){
+	public function putVolveradmin($id){
 
 		$usuario = Usuario::findOrFail($id);
 		$usuario->roles_id = '1';
