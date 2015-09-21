@@ -8,13 +8,7 @@ body {
     overflow-x: hidden;
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
-.pas{
-    width: 17px;
-    height: 18px;
-    margin-left: 4px;
-    margin-bottom: 3px;
-}
-.pass{
+.bien1 , .bien2,.mal1 , .mal2{
     width: 17px;
     height: 18px;
     margin-left: 4px;
