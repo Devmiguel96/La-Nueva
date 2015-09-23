@@ -363,7 +363,16 @@
         </div>
     </footer>
     <script id="cid0020000102392352913" data-cfasync="false" async src="//st.chatango.com/js/gz/emb.js" style="width: 275px;height: 402px;">{"handle":"la-nueva","arch":"js","styles":{"a":"383838","b":95,"c":"FFFFFF","d":"FFFFFF","f":95,"i":95,"k":"383838","l":"383838","m":"383838","n":"FFFFFF","o":95,"p":"10","q":"383838","r":95,"pos":"br","cv":1,"cvbg":"202020","cvbga":64,"cvw":266,"cvh":37,"ticker":1,"fwtickm":1}}</script>
+    <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+          ga('create', 'UA-67887921-1', 'auto');
+          ga('send', 'pageview');
+
+    </script>
     <div class="modal fade" id="portfolioModal1"  aria-hidden="true"role="dialog">
     <div class="modal-dialog">
     
