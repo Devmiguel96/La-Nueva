@@ -210,7 +210,7 @@
                     </div>
                     <div class="col-sm-4">
                         <div class="team-member">
-                            <img src="img/equipo/33.jpg" class="tamano img-responsive img-circle" alt="">
+                            <img src="img/equipo/66.jpg" class="tamano img-responsive img-circle" alt="">
                             <h4>Carlos Jr Guerrero Gutierrez</h4>
                             <p class="text-muted">Dj Locutor</p>
                             <ul class="list-inline social-buttons">
