@@ -15,10 +15,11 @@
     <link rel="icon" type="image/png" href="{{asset('/img/logo.png')}}" />
 
     <!-- Bootstrap Core CSS -->
+    <link href="{{asset('css/agency.css')}}" rel="stylesheet">
     <link href="{{asset('css/bootstrap.min.css') }}" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="{{asset('css/agency.css')}}" rel="stylesheet">
+    
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">

@@ -293,8 +293,8 @@
                     <div class="col-sm-4">
                         <div class="team-member">
                             <img src="img/equipo/9.jpg" class="tamano img-responsive img-circle" alt="">
-                            <h4>Diana Pertersen</h4>
-                            <p class="text-muted">Locutor</p>
+                            <h4>Geovanis Alvarez</h4>
+                            <p class="text-muted">Periodista</p>
                             <ul class="list-inline social-buttons">
                                 <li><a href="#"><i class="fa fa-twitter"></i></a>
                                 </li>
