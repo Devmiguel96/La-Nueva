@@ -74,11 +74,11 @@
                     </thead>
                     @foreach($programas as $programa)
                         <tbody>
-                            <td><p class="mayus">{{ $programa->nombre }}</p> </td>
-                            <td><p class="mayus">{{ $programa->horario }}</p></td>
-                            <td><p class="mayus">{{ $programa->comienza }}</p></td>
-                            <td><p class="mayus">{{ $programa->termina }}</p></td>
-                            <td><p class="mayus">{{ $programa->dirige }}</p></td>
+                            <td style="width:1px"><p class="mayus">{{ $programa->nombre }}</p> </td>
+                            <td style="width:1px"><p class="mayus">{{ $programa->horario }}</p></td>
+                            <td style="width:1px"><p class="mayus">{{ $programa->comienza }}</p></td>
+                            <td style="width:1px"><p class="mayus">{{ $programa->termina }}</p></td>
+                            <td style="width:1px"><p class="mayus">{{ $programa->dirige }}</p></td>
                         </tbody>
                     @endforeach
                 </table>
