@@ -89,7 +89,7 @@
                             <a class="page-scroll" href="#portfolio">Noticias</a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="#services">Programas</a>
+                            <a class="page-scroll" href="#services">Programación</a>
                         </li>
                         <li>
                             <a class="page-scroll" href="#about">Acerca de</a>

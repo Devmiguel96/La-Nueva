@@ -59,7 +59,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Programas.</h2>
+                    <h2 class="section-heading">Programación.</h2>
                     <h3 class="section-subheading text-muted">Emisora La Nueva 101.6 MHZ, de Sabanalarga.</h3>
                 </div>
             </div>
@@ -212,7 +212,7 @@
                         <div class="team-member">
                             <img src="img/equipo/33.jpg" class="tamano img-responsive img-circle" alt="">
                             <h4>Carlos Jr Guerrero Gutierrez</h4>
-                            <p class="text-muted">Consola de Sonido</p>
+                            <p class="text-muted">Dj Locutor</p>
                             <ul class="list-inline social-buttons">
                                 <li><a href="#"><i class="fa fa-twitter"></i></a>
                                 </li>
@@ -240,7 +240,7 @@
                         <div class="team-member">
                             <img src="img/equipo/5.jpg" class="tamano img-responsive img-circle" alt="">
                             <h4>Armando Rodriguez Gutierrez</h4>
-                            <p class="text-muted">Consola de Sonido</p>
+                            <p class="text-muted">Dj Locutor</p>
                             <ul class="list-inline social-buttons">
                                 <li><a href="#"><i class="fa fa-twitter"></i></a>
                                 </li>
@@ -334,9 +334,10 @@
                         <h6 id="texto">Emisora la Nueva</h6>
                         <p id="texto">Emisora la Nueva 101.6 MHZ de Sabanalarga, Miembro de la Red de Radios Comunitarias de la Costa Atlántica, Somos la Verdadera Radio.</p>
 
-                        <p id="texto"><strong>Direccion:</strong>  Cra 19 #21 – 45 2do piso, Barrio centro Sabanalarga (Atlantico)</p>
-                        <p id="texto"><strong>Telefonos:</strong> 8783134-8780418  Movil:3016026767</p>
-                        <p id="texto"><strong>E-mail:</strong>...</p>
+                        <p id="texto"><strong>Direccion:</strong>  Cra 18 # 21 – 73 2do piso, Barrio centro Sabanalarga (Atlantico)</p>
+                        <p id="texto"><strong>Telefonos:</strong> 8783134 - 8780418 </p> 
+                        <p id="texto"><strong>WhatsApp:</strong> 3016026767</p>
+                        <p id="texto"><strong>E-mail:</strong> lanuevastereo@yahoo.es</p>
                     </div>
                 </div>
             </div>
