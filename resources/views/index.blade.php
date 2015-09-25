@@ -111,7 +111,7 @@
                                     <h4 class="subheading">Inicios</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    <p class="text-muted">Emisora la Nueva 101.6 MHZ de Sabanalarga, Miembro de la Red de Radios Comunitarias de la Costa Atlántica, Somos la Verdadera Radio.</p>
                                 </div>
                             </div>
                         </li>
@@ -124,7 +124,7 @@
                                     <h4 class="subheading">Misión</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    <p class="text-muted">Emisora la Nueva 101.6 MHZ de Sabanalarga, Miembro de la Red de Radios Comunitarias de la Costa Atlántica, Somos la Verdadera Radio.</p>
                                 </div>
                             </div>
                         </li>
@@ -137,7 +137,7 @@
                                     <h4 class="subheading">Visión</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    <p class="text-muted">Emisora la Nueva 101.6 MHZ de Sabanalarga, Miembro de la Red de Radios Comunitarias de la Costa Atlántica, Somos la Verdadera Radio.</p>
                                 </div>
                             </div>
                         </li>
@@ -154,7 +154,7 @@
                                     <h4 class="subheading">Actualidad</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    <p class="text-muted">Emisora la Nueva 101.6 MHZ de Sabanalarga, Miembro de la Red de Radios Comunitarias de la Costa Atlántica, Somos la Verdadera Radio.</p>
                                 </div>
                             </div>
                         </li>
