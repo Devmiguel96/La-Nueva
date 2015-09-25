@@ -292,7 +292,7 @@
                     </div>
                     <div class="col-sm-4">
                         <div class="team-member">
-                            <img src="img/equipo/9.jpg" class="tamano img-responsive img-circle" alt="">
+                            <img src="img/equipo/99.jpg" class="tamano img-responsive img-circle" alt="">
                             <h4>Geovanis Alvarez</h4>
                             <p class="text-muted">Periodista</p>
                             <ul class="list-inline social-buttons">
