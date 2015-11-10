@@ -43,14 +43,15 @@
             <li><span class="centrado"><div class="container"><div class="intro-text">
                 <div class="intro-lead-in">La Nueva 101.6 MHZ</div>
                 <div class="intro-heading">la verdadera radio</div>
-                <a class="page-scroll btn btn-xl"  href="javascript:window.open('<audio controls>
-                    <source src='{{asset('LaNuevaStereoFM')}}' type='audio/mpegURL' />
-                </audio>','La Nueva 101.6 Mhz, Primerisima!!!','width=600,height=400') "  id="transmision">Escuchar en vivo <span class="glyphicon glyphicon-volume-up"></span></a>
+                <a class="page-scroll btn btn-xl"  href="javascript:window.open('http://www.ustream.tv/embed/14878799?v=3&amp;wmode=direct','La Nueva 101.6 Mhz, Primerisima!!!','width=600,height=400') "  id="transmision">Escuchar en vivo <span class="glyphicon glyphicon-volume-up"></span></a>
             </div></div></span><img src="{{asset('img/header1.jpg')}}" alt="">
             </li>
             <li><span></span>
             <img src="{{asset('img/header.jpg')}}" alt="">
             </li>
+            <audio controls>
+                <source src="{{asset('LaNuevaStereoFM')}}" type="audio/mpegURL" />
+            </audio>
         </ul>
     </div>
 <div class="container">
