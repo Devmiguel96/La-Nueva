@@ -1,6 +1,23 @@
 @extends('layout.nav')
 
 @section('content')
+     <!-- Programas Section -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Escuchanos en Vivo,</h2>
+                    <h3 class="section-subheading text-muted">Emisora La Nueva 101.6 MHZ, de Sabanalarga.</h3>
+                </div>
+            </div>
+            <center>
+                <audio controls autoplay="autoplay"><source src="http://69.30.211.66:8042/;stream.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+                </audio>
+            </center>
+            
+        </div>
+    </section>
 
     <!-- Noticias Section -->
     
@@ -8,9 +25,6 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                <audio controls>
-                    <source src="{{asset('LaNuevaStereoFM')}}" type="audio/mpegURL" />
-                 </audio>
                     <h2 class="section-heading">Noticias</h2>
                     <!--{!! Form::open(['url'=>'/noticias/buscarnoticias','method'=>'GET','class'=>'navbar-form','role'=>'search']) !!}
                         <div class="form-group">
