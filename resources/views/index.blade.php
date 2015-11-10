@@ -8,6 +8,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
+                <audio controls>
+                    <source src="{{asset('LaNuevaStereoFM')}}" type="audio/mpegURL" />
+                 </audio>
                     <h2 class="section-heading">Noticias</h2>
                     <!--{!! Form::open(['url'=>'/noticias/buscarnoticias','method'=>'GET','class'=>'navbar-form','role'=>'search']) !!}
                         <div class="form-group">
