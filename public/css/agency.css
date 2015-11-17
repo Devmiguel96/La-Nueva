@@ -13,6 +13,16 @@ body {
     height: 250px;
 }
 
+.logo{
+    margin :-13px 0px 0px 0px;
+}
+.Alaire{
+    color: #FFF;
+    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+    font-size: 20px;
+    float: right;
+    margin: -33px 12px 12px 0px;
+}
 .escucha{
     background-color: rgba(0, 0, 0, 0.52);
     height: 61px;
@@ -102,9 +112,6 @@ p {
 p.large {
     font-size: 16px;
 }
-.mayus{
-    text-transform: uppercase;
-}
 .drop:focus,
 .drop:active,
 .drop.active,
@@ -113,6 +120,10 @@ p.large {
     color:#FFFFFF;
 }
 
+#texto1{
+    color:#FFFFFF;
+    margin: -15px;
+}
 #texto{
     color:#FFFFFF;
 }
@@ -328,7 +339,7 @@ fieldset[disabled] .btn-xl.active {
 @media(min-width:768px) {
     
     .navbar-default {
-        padding: 25px 0;
+        padding: 44px 7px 1px 3px;
         border: 0;
         background-color: rgba(2, 2, 2, 0.41);
         -webkit-transition: padding .3s;
@@ -348,12 +359,12 @@ fieldset[disabled] .btn-xl.active {
     }
 
     .navbar-default.navbar-shrink {
-        padding: 10px 0;
+        padding: 45px 0px 7px 0px;
         background-color: #222;
     }
 
     .navbar-default.navbar-shrink .navbar-brand {
-        font-size:27px;
+        font-size:40px;
     }
 }
 

@@ -1,23 +1,10 @@
 @extends('layout.nav')
+@section('estilos')
+    @parent
+        <link href="{{asset('css/tabla.css') }}" rel="stylesheet">
+@endsection
 
 @section('content')
-     <!-- Programas Section -->
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Escuchanos en Vivo,</h2>
-                    <h3 class="section-subheading text-muted">Emisora La Nueva 101.6 MHZ, de Sabanalarga.</h3>
-                </div>
-            </div>
-            <center>
-                <audio controls autoplay="autoplay"><source src="http://69.30.211.66:8042/;stream.mp3" type="audio/mp3">
-                Your browser does not support the audio element.
-                </audio>
-            </center>
-            
-        </div>
-    </section>
 
     <!-- Noticias Section -->
     
@@ -73,33 +60,38 @@
 
     <!-- Programas Section -->
     <section id="services">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Programación.</h2>
                     <h3 class="section-subheading text-muted">Emisora La Nueva 101.6 MHZ, de Sabanalarga.</h3>
                 </div>
             </div>
-            <div class="row">
+            <div class="col-lg-12">
                 <table class="table table-hover">
                     <thead>
-                        <th>Programas</th>
-                        <th>Horario</th>
-                        <th>Comienza</th>
-                        <th>Termina</th>
-                        <th>Dirigido por</th>
+                        <tr>
+                            <th ><p>Programas</p></th>
+                            <th ><p>Horario</p></th>
+                            <th ><p>Comienza</p></th>
+                            <th ><p>Termina</p></th>
+                            <th ><p>Dirigido por</p></th>
+                        </tr>
                     </thead>
-                    @foreach($programas as $programa)
-                        <tbody>
-                            <td style="width:1px"><p class="mayus">{{ $programa->nombre }}</p> </td>
-                            <td style="width:1px"><p class="mayus">{{ $programa->horario }}</p></td>
-                            <td style="width:1px"><p class="mayus">{{ $programa->comienza }}</p></td>
-                            <td style="width:1px"><p class="mayus">{{ $programa->termina }}</p></td>
-                            <td style="width:1px"><p class="mayus">{{ $programa->dirige }}</p></td>
-                        </tbody>
-                    @endforeach
+                    <tbody>
+                        @foreach($programas as $programa)
+                        <tr>
+                            <td ><p>{{ $programa->nombre }}</p></td>
+                            <td ><p>{{ $programa->horario }}</p></td>
+                            <td ><p>{{ $programa->comienza }}</p></td>
+                            <td ><p>{{ $programa->termina }}</p></td>
+                            <td ><p>{{ $programa->dirige }}</p></td>
+                        </tr>
+                        @endforeach
+                    </tbody>
+                    
                 </table>
-            </div>
+            </div>      
         </div>
     </section>
 
@@ -380,93 +372,19 @@
             </div>
         </div>
     </footer>
-    <script id="cid0020000102392352913" data-cfasync="false" async src="//st.chatango.com/js/gz/emb.js" style="width: 275px;height: 402px;">{"handle":"la-nueva","arch":"js","styles":{"a":"383838","b":95,"c":"FFFFFF","d":"FFFFFF","f":95,"i":95,"k":"383838","l":"383838","m":"383838","n":"FFFFFF","o":95,"p":"10","q":"383838","r":95,"pos":"br","cv":1,"cvbg":"202020","cvbga":64,"cvw":266,"cvh":37,"ticker":1,"fwtickm":1}}</script>
+            <script id="cid0020000102392352913" data-cfasync="false" async src="//st.chatango.com/js/gz/emb.js" style="width: 275px;height: 402px;">{"handle":"la-nueva","arch":"js","styles":{"a":"383838","b":95,"c":"FFFFFF","d":"FFFFFF","f":95,"i":95,"k":"383838","l":"383838","m":"383838","n":"FFFFFF","o":95,"p":"10","q":"383838","r":95,"pos":"br","cv":1,"cvbg":"202020","cvbga":64,"cvw":266,"cvh":37,"ticker":1,"fwtickm":1}}</script>
     
-    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-68647991-1', 'auto');
-  ga('send', 'pageview');
+          ga('create', 'UA-68647991-1', 'auto');
+          ga('send', 'pageview');
 
-</script>
-    <div class="modal fade" id="portfolioModal1"  aria-hidden="true"role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header" style="padding:35px 50px;">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4><span class="glyphicon glyphicon-lock"></span> Login</h4>
-        </div>
-        <div class="modal-body" style="padding:40px 50px;">
-        @if (count($errors) > 0)
-                        <div class="alert alert-danger">
-                        Corriga los Siguientes Errores<br><br>
-                            <ul>
-                                @foreach ($errors->all() as $error)
-                                    <li>{{ $error }}</li>
-                                @endforeach
-                            </ul>
-                        </div>
-                    @endif
-
-                    <form class="form-horizontal" role="form" method="POST" action="/couser/public/auth/login">
-                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
-
-                        <div class="form-group">
-                            {!! Form::label('email','Correo Electronico',['class'=>'col-md-4 control-label']) !!}
-                            <div class="col-md-6">
-                                {!! Form::text('email',null,['class'=>'form-control']) !!}
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            {!! Form::label('password','Contraseña',['class'=>'col-md-4 control-label']) !!}
-                            <div class="col-md-6">
-                                {!! Form::password('password',['class'=>'form-control']) !!}
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-md-6 col-md-offset-4">
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" name="remember">Recordarme
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        
-                            <div class="col-md-6 col-md-offset-4">
-                                <input type="submit" class="btn btn-warning" value="L O G I N">
-                                                                   
-                        </div>
-                    </form>
-        </div>
-        <div class="modal-footer">
-          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
-          <p>No tienes Cuenta? <a href="#">Registrate</a></p>
-        </div>
+        </script>
       </div>     
     </div>
-  </div> 
-  <div class="escucha">
-    <a href="javascript:window.open('http://www.ustream.tv/embed/14878799?v=3&amp;wmode=direct','La Nueva 101.6 Mhz, Primerisima!!!','width=600,height=400') "  id="transmision">Escucha la Nueva 101.6 mhz</a>
-</div>
-@endsection
-@section('script')
-<script>
-    jQuery(window).scroll(function(){
-        if(jQuery(this).height() + jQuery(this).scrollTop() == $(document).height()) {
-            jQuery('.escucha').fadeOut();
-        }else if (jQuery(this).scrollTop() > 1000)
-            jQuery('.escucha').fadeIn(500);
-        else
-            jQuery('.escucha').fadeOut();
-    });
-</script>
+  </div>
 @endsection

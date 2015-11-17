@@ -1,0 +1,18 @@
+tr {
+width: 100%;
+display: inline-table;
+}
+
+table{
+ height:300px; 
+}
+tbody{
+  overflow-y: scroll;
+  height: 400px;
+  width: 100%;
+  position: absolute;
+}
+tbody>tr>td{
+	text-transform: uppercase;
+	width:1%;
+}

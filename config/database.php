@@ -73,10 +73,10 @@ return [
 
 		'pgsql' => [
 			'driver'   => 'pgsql',
-			'host'     => $host,
-			'database' => $database,
-			'username' => $username,
-			'password' => $password,
+			'host'     => 'ec2-54-204-20-164.compute-1.amazonaws.com',
+			'database' => 'd6dnksjdmi4pu4',
+			'username' => 'ycsywtcdykanqo',
+			'password' => 'xaq4pSHi5PvL2oQewQfAavILPc',
 			'charset'  => 'utf8',
 			'prefix'   => '',
 			'schema'   => 'public',
