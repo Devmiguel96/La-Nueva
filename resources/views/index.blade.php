@@ -45,7 +45,7 @@
                                     <i class="fa fa-plus fa-3x"></i>
                                 </div>
                             </div>
-                            <img src="{{asset('storage/')}}/{{$noticia->foto}}" class="imgnoticias" alt="">
+                            <img src="{{asset('imagenes/')}}/{{$noticia->foto}}" class="imgnoticias" alt="">
                         </a>
                         <div class="portfolio-caption">
                             <h4>{{ $titulos = str_limit($noticia->titulo, 40) }}</h4>

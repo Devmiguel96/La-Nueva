@@ -45,7 +45,7 @@ return [
 
 		'local' => [
 			'driver' => 'local',
-			'root'   => public_path('imagenes_noticias'),
+			'root'   => public_path().'/imagenes',
 		],
 
 		's3' => [

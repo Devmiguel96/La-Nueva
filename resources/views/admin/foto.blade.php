@@ -9,7 +9,7 @@
 				<div class="panel-body">
 					<a href="{{ url('/admin/noticias') }}" class="btn btn-info pull-left" role="button">Atras</a>
 					<div class="col-md-8 col-md-offset-2">
-						<img src="{{asset('storage/')}}/{{$noticias->foto}}" class="img-thumbnail">
+						<img src="{{asset('imagenes/')}}/{{$noticias->foto}}" class="img-thumbnail">
 					</div>					
 				</div>
 			</div>

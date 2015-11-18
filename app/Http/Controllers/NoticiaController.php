@@ -80,7 +80,7 @@ class NoticiaController extends Controller {
 
         if($noticias->save()){
         	//guardamos la imagen en public/img con el nombre original
-        	$file->move(public_path('storage'),$file->getClientOriginalName());
+        	$file->move(public_path().'/imagenes',$file->getClientOriginalName());
 			//redirigimos con un mensaje flash
 			return Redirect('/noticias');
         } 

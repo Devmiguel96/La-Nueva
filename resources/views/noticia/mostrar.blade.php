@@ -20,7 +20,7 @@
 					
 						<h1 class="text-center titulo" >{!! $noticias->titulo !!}</h1>
 						<div class="col-md-8 col-md-offset-2">
-								<img src="{{asset('storage/')}}/{{$noticias->foto}}"  class="img-thumbnail"  alt="...">
+								<img src="{{asset('imagenes/')}}/{{$noticias->foto}}"  class="img-thumbnail"  alt="...">
 							<p class="text-left">{!! $noticias->detalle !!}</p><br>
 							<ul class="list-group">
 							    <li class="list-group-item active"><img  src="{{ asset('img/comen.png') }}" alt="Comentario" title="Comentarios"> <strong>{{ $cant }} Comentarios</strong></li>
