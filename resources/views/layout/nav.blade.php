@@ -95,7 +95,7 @@
 
             <!--this is a test of jplayer-->
             <div id="jquery_jplayer_1" class="jp-jplayer"></div>
-            <div id="jp_container_1" style="margin:-36px 4px -3px 0px;" class="jp-audio-stream" role="application" aria-label="media player">
+            <div id="jp_container_1" class="reproductor jp-audio-stream" role="application" aria-label="media player">
                 <div class="jp-type-single">
                     <div class="jp-gui jp-interface">
                         <div class="jp-controls">
