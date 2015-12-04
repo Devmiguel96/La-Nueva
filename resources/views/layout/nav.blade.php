@@ -118,8 +118,8 @@
                     </div>
                 </div>
             </div>
-
             <p class="Alaire">Escuchanos en Vivo</p>
+            <a href="javascript:window.open('https://streamup.com/lanuevastereo101-6fm/embeds/video?startMuted=true','','width=700,height=600,location=no')"  class="ver btn botom">Ver en Vivo</a>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">

@@ -8,6 +8,16 @@ body {
     overflow-x: hidden;
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
+.ver{
+    float: right;
+    margin: -30px 10px 0px 0px;
+}
+.botom{
+    color: #FFFFFF;
+    background-color: #A5A7A6;
+    border-color: #747474;
+
+}
 .tamano{
     width: 250px;
     height: 250px;
